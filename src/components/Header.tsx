@@ -212,7 +212,7 @@ const Header = () => {
 
         <div className="w-32 h-20 flex-shrink-0 transform hover:scale-105 transition-transform duration-300">
           <img
-            src="/blra-logo.jpeg"
+            src="/Logo_zie.png"
             alt="Logo"
             className="w-full h-full object-contain drop-shadow-lg"
           />
