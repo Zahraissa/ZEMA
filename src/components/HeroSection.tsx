@@ -1,8 +1,8 @@
 import { Button } from "@/components/ui/button";
 import { ChevronLeft, ChevronRight, Play, ArrowRight } from "lucide-react";
 import leaderPortrait from "@/assets/leader-portrait.jpg";
-import viongozi from "@/assets/voingozi.jpg";
-import wavuvi from "@/assets/wavuvi.jpg";
+import gallery from "@/assets/Gallery00.jpg";
+import slides from "@/assets/Slideshow01.png";
 import {
   Carousel,
   CarouselContent,
@@ -112,7 +112,7 @@ const HeroSection = () => {
       is_active: true,
       created_at: "",
       updated_at: "",
-      image_path: wavuvi,
+      image_path: slides,
     },
     {
       id: 2,
@@ -129,7 +129,7 @@ const HeroSection = () => {
       is_active: true,
       created_at: "",
       updated_at: "",
-      image_path: viongozi,
+      image_path: gallery,
     },
   ];
 
@@ -138,7 +138,7 @@ const HeroSection = () => {
   const getImageUrl = (imagePath?: string) => {
     if (!imagePath) {
       console.log('No image path provided, using fallback image');
-      return viongozi;
+      return gallery;
     }
     
     // Add ultra-aggressive cache-busting parameters to force refresh
@@ -153,7 +153,7 @@ const HeroSection = () => {
     console.error('Image failed to load:', e.currentTarget.src);
     console.log('Slide data:', slide);
     // Fallback to leader portrait if image fails to load
-    e.currentTarget.src = wavuvi;
+    e.currentTarget.src = slides;
     e.currentTarget.onerror = null; // Prevent infinite loop
   };
 
@@ -173,7 +173,7 @@ const HeroSection = () => {
   return (
     <section
       className="relative bg-gradient-hero min-h-[400px] sm:min-h-[500px] md:min-h-[600px] lg:min-h-[700px] flex items-center overflow-hidden"
-      style={{ backgroundImage: "url(Zanzibar.jpg)" }}
+      style={{ backgroundImage: "url(Gallery02.jpg)" }}
     >
 
       {/* Enhanced Animated Background Pattern */}

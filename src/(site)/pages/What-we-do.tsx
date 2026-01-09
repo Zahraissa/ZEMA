@@ -76,7 +76,7 @@ const WhatWeDo = () => {
       <div className="min-h-screen bg-gradient-to-br from-gray-50 via-blue-50/30 to-gray-50">
         <Header />
           {/* Enhanced Page Header */}
-          <section className="relative bg-green-500 text-white py-20 overflow-hidden">
+          <section className="relative bg-green-500 text-white py-2 overflow-hidden">
               <div className="absolute inset-0 bg-black/10"></div>
               <div className="absolute inset-0 opacity-20" style={{
                   backgroundImage: `url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23ffffff' fill-opacity='0.05'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E")`
@@ -84,14 +84,14 @@ const WhatWeDo = () => {
               <div className="container mx-auto px-4 relative z-10">
                   <div className="text-center max-w-3xl mx-auto">
 
-                      <h1 className="text-5xl md:text-6xl font-bold mb-4 drop-shadow-lg">What We Do</h1>
+                      <h1 className="text-5xl md:text-6xl font-serif font-bold mb-4 drop-shadow-lg">Mission & Vission</h1>
                       <nav className="flex justify-center items-center space-x-2 text-sm text-blue-100">
                           <a href="/" className="flex items-center gap-1 hover:text-white transition-colors">
                               <HomeIcon className="w-4 h-4 text-white" />
                               <span>Home</span>
                           </a>
                           <span>/</span>
-                          <span className="text-white font-medium">what we do</span>
+                          <span className="text-white font-medium">Mission & Vission</span>
                       </nav>
 
                   </div>
@@ -119,7 +119,7 @@ const WhatWeDo = () => {
       <div className="min-h-screen bg-gradient-to-br from-gray-50 via-blue-50/30 to-gray-50">
         <Header />
           {/* Enhanced Page Header */}
-          <section className="relative bg-green-500 text-white py-20 overflow-hidden">
+          <section className="relative bg-green-500 text-white py-2 overflow-hidden">
               <div className="absolute inset-0 bg-black/10"></div>
               <div className="absolute inset-0 opacity-20" style={{
                   backgroundImage: `url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23ffffff' fill-opacity='0.05'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E")`
@@ -127,21 +127,21 @@ const WhatWeDo = () => {
               <div className="container mx-auto px-4 relative z-10">
                   <div className="text-center max-w-3xl mx-auto">
 
-                      <h1 className="text-5xl md:text-6xl font-bold mb-4 drop-shadow-lg">What We Do</h1>
+                      <h1 className="text-5xl md:text-6xl font-serif font-bold mb-4 drop-shadow-lg">Mission & Vission</h1>
                       <nav className="flex justify-center items-center space-x-2 text-sm text-blue-100">
                           <a href="/" className="flex items-center gap-1 hover:text-white transition-colors">
                               <HomeIcon className="w-4 h-4 text-white" />
                               <span>Home</span>
                           </a>
                           <span>/</span>
-                          <span className="text-white font-medium">what we do</span>
+                          <span className="text-white font-medium">Mission & Vission</span>
                       </nav>
 
                   </div>
               </div>
           </section>
 
-          <div className="flex items-center justify-center min-h-[60vh]">
+          {/* <div className="flex items-center justify-center min-h-[60vh]">
           <div className="text-center bg-white rounded-2xl shadow-lg p-8 max-w-md mx-4">
             <div className="p-3 bg-red-100 rounded-full w-16 h-16 mx-auto mb-4 flex items-center justify-center">
               <Briefcase className="w-8 h-8 text-red-600" />
@@ -154,7 +154,54 @@ const WhatWeDo = () => {
               Jaribu tena
             </button>
           </div>
-        </div>
+        </div> */}
+        <section className="py-16 bg-white">
+  <div className="container mx-auto px-4">
+    <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 items-center">
+
+      {/* IMAGE SIDE */}
+      <div className="order-1 lg:order-2 flex justify-center">
+        <img
+          src="/img/MissionVission.jpg"
+          alt="Mission and Vision"
+          className="w-full max-w-md object-cover"
+          style={{
+            boxShadow:
+              "0px 0px 5px 2px blue, 0px 0px 15px 10px #FFD700",
+          }}
+        />
+      </div>
+
+      {/* TEXT SIDE */}
+      <div className="order-2 lg:order-1">
+        <p className="text-black-700 leading-relaxed font-serif text-justify mb-6">
+          ZEMA supports the overall objective of the Zanzibar Environmental
+          Policy (ZEP). The ZEP intends to pave the way for the protection,
+          conservation, restoration and management of Zanzibar’s environmental
+          resources, such that their capacity to sustain development and
+          maintain the rich environmental endowment for the present and future
+          generations is not impaired.
+        </p>
+
+        <p className="text-black-800 text-justify mb-4">
+          <span className="font-serif text-green-700">Our Vision:</span>{" "}
+          Sound environment management for sustainable economic and social
+          benefit for present and future generations.
+        </p>
+
+        <p className="text-black-800 text-justify">
+          <span className="font-serif text-green-700">Our Mission:</span>{" "}
+          To promote sound and sustainable environmental management practices
+          through provision of policy guidance, institutional strengthening and
+          cooperation.
+        </p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
         <Footer />
       </div>
     );
@@ -165,7 +212,7 @@ const WhatWeDo = () => {
       <Header />
       
       {/* Enhanced Page Header */}
-        <section className="relative bg-green-500 text-white py-20 overflow-hidden">
+        <section className="relative bg-blue-500 text-white py-20 overflow-hidden">
             <div className="absolute inset-0 bg-black/10"></div>
             <div className="absolute inset-0 opacity-20" style={{
                 backgroundImage: `url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23ffffff' fill-opacity='0.05'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E")`
@@ -173,14 +220,14 @@ const WhatWeDo = () => {
             <div className="container mx-auto px-4 relative z-10">
                 <div className="text-center max-w-3xl mx-auto">
 
-                    <h1 className="text-5xl md:text-6xl font-bold mb-4 drop-shadow-lg">What We Do</h1>
+                    <h1 className="text-5xl md:text-6xl font-bold mb-4 drop-shadow-lg">Mission & Vission</h1>
                     <nav className="flex justify-center items-center space-x-2 text-sm text-blue-100">
                         <a href="/" className="flex items-center gap-1 hover:text-white transition-colors">
                             <HomeIcon className="w-4 h-4 text-white" />
                             <span>Home</span>
                         </a>
                         <span>/</span>
-                        <span className="text-white font-medium">what we do</span>
+                        <span className="text-white font-medium">Mission & Vission</span>
                     </nav>
 
                 </div>
@@ -204,7 +251,7 @@ const WhatWeDo = () => {
                           </h3>
                       </div>
                       <nav className="space-y-1">
-                          <a href="/about" className="block text-gray-600 hover:text-black hover:bg-green-100 transition-all py-2 hover:px-3 rounded-lg">
+                          <a href="/about" className="block text-gray-600 hover:text-black hover:bg-blue-100 transition-all py-2 hover:px-3 rounded-lg">
                               Who we are
                           </a>
                           <a href="/director-general" className="block text-gray-600 hover:text-black hover:bg-green-100 transition-all py-2 hover:px-3 rounded-lg">

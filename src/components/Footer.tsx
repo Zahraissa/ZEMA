@@ -117,15 +117,14 @@ const Footer = () => {
           {/* Useful Links Widget */}
           <div className="bg-white/5 backdrop-blur-lg rounded-2xl p-6 hover:border-blue-500/50 transition-all duration-300">
             <h3 className="text-xl font-light mb-6 text-white">
-              Viungo Muhimu
+              Our Partners
             </h3>
             <ul className="space-y-3">
               {[
-                { text: "Nyumbani", href: "/" },
-                { text: "Kuhusu Sisi", href: "/about" },
-                { text: "Huduma Zetu", href: "/services" },
-                { text: "Sheria na Kanuni", href: "/contact" },
-                { text: "Habari na Media", href: "/news" },
+                { text: "Zanzibar Investment Promotion Authority (ZIPA)", href: "https://www.zipa.go.tz/" },
+                { text: "Zanzibar Commission of Tourism (ZCT)", href: "http://www.zanzibartourism.go.tz/" },
+                { text: "Zanzibar Petroleum Regulatory Authority (ZPRA)", href: "http://www.zpra.go.tz/" },
+                { text: "Zanzibar Utility Regulatory Authority (ZURA)", href: "https://www.zura.go.tz/" },
               ].map((link, index) => (
                 <li key={index}>
                   <a
@@ -143,15 +142,41 @@ const Footer = () => {
           {/* Services Widget */}
           <div className="bg-white/5 backdrop-blur-lg rounded-2xl p-6 hover:border-blue-500/50 transition-all duration-300">
             <h3 className="text-xl font-light mb-6 text-white">
-              Huduma Zetu
+             Related Links
             </h3>
             <ul className="space-y-3">
               {[
-                { text: "UI/UX Design", href: "/services" },
-                { text: "Web Design", href: "/services" },
-                { text: "System Development", href: "/services" },
-                { text: "Training", href: "/services" },
-                { text: "Hosting Services", href: "/services" },
+                { text: "First Vice President office-Zanzibar", href: "http://www.omkr.go.tz/" },
+                { text: "National Environment Management Council (NEMC)", href: "https://www.nemc.or.tz" },
+                { text: "Admin Portal", href: "/adminPanel" },
+                { text: "Staff Mail", href: "https://mail.zema.go.tz" },
+              ].map((service, index) => (
+                <li key={index}>
+                  <a
+                    href={service.href}
+                    className="text-white hover:text-blue-100 transition-all duration-300 flex items-center gap-2 group"
+                  >
+                    <div className="w-1.5 h-1.5 bg-white rounded-full group-hover:bg-blue-400 group-hover:scale-125 transition-transform"></div>
+                    {service.text}
+                  </a>
+                </li>
+              ))}
+            </ul>
+          </div>
+
+          <div className="bg-white/5 backdrop-blur-lg rounded-2xl p-6 hover:border-blue-500/50 transition-all duration-300">
+            <h3 className="text-xl font-light mb-6 text-white">
+             User Guide
+            </h3>
+            <ul className="space-y-3">
+              {[
+                { text: "ZEMA ACT:2015", href: "pdf_data/rules/Zanzibar Environmental Management Act, 2015.pdf" },
+                { text: "Zanzibar Environmental Policy- 2013", href: "pdf_data/rules/ZANZIBAR ENVIONMENTAL POLICY 2013.pdf" },
+                { text: "Regulation of Plastic Bags-2018", href: "pdf_data/rules/Regulation_Plastic Bags_2018.pdf" },
+                { text: "EIA Form", href: "pdf_data/EIA_FORM.pdf" },
+                { text: "List of Registered Experts/Firms 2022/23", href: "javascript:void(0)" },
+                { text: "For more Regulation and Guidance", href: "javascript:void(0)" },
+                { text: "For more Policies And Laws", href: "javascript:void(0)" },
               ].map((service, index) => (
                 <li key={index}>
                   <a
@@ -167,7 +192,7 @@ const Footer = () => {
           </div>
 
           {/* Contact Widget */}
-          <div className="bg-white/5 backdrop-blur-lg rounded-2xl p-6 hover:border-blue-500/50 transition-all duration-300">
+          {/* <div className="bg-white/5 backdrop-blur-lg rounded-2xl p-6 hover:border-blue-500/50 transition-all duration-300">
             <h3 className="text-xl font-light mb-6 text-white">
               Wasiliana Nasi
             </h3>
@@ -221,10 +246,11 @@ const Footer = () => {
                 </div>
               </div>
             </div>
-          </div></div>
+          </div> */}
+          </div>
 
           {/*social links*/}
-          <div className="row-start-1 flex items-center space-x-4 p-3">
+          {/* <div className="row-start-1 flex items-center space-x-4 p-3">
               <a
                   href="https://facebook.com"
                   target="_blank"
@@ -260,18 +286,20 @@ const Footer = () => {
               >
                   <Linkedin className="w-5 h-5" />
               </a>
-          </div>
+          </div> */}
 
         {/* Bottom Section */}
-        <div className="border-t border-blue-600/30 pt-8">
-          <div className="flex flex-col sm:flex-row justify-between items-center space-y-4 sm:space-y-0">
+        <div className="border-t border-green-600/30 pt-8">
+          <div className="flex flex-col sm:flex-row justify-center items-center space-y-4 sm:space-y-0">
             <div className="text-center sm:text-left">
               <p className="text-white text-sm">
-                Copyright © {new Date().getFullYear()}, Developed & Maintained
-                by eGAZ
+                Copyright © {new Date().getFullYear()}, {" "}
+                <span className="text-yellow-400 font-serif font-bold">
+                   -ZANZIBAR ENVIROMENT MANAGEMENT AUTHORITY (ZEMA)
+        </span>
               </p>
             </div>
-            <div className="flex space-x-6">
+            {/* <div className="flex space-x-6">
               {[
                 { text: "Terms", href: "/terms" },
                 { text: "Policy", href: "/privacy" },
@@ -284,15 +312,15 @@ const Footer = () => {
                   {link.text}
                 </a>
               ))}
-            </div>
+            </div> */}
           </div>
         </div>
       </div>
 
       {/* Floating Action Buttons */}
-      <div className="fixed bottom-6 right-6 z-50 flex flex-col items-end space-y-3">
+      {/* <div className="fixed bottom-6 right-6 z-50 flex flex-col items-end space-y-3"> */}
         {/* Extra buttons appear when open */}
-        <div
+        {/* <div
           className={`transition-all duration-500 ease-in-out overflow-hidden ${isVisible
             ? "opacity-100 max-h-96 tranblue-y-0"
             : "opacity-0 max-h-0 -tranblue-y-2"
@@ -335,7 +363,7 @@ const Footer = () => {
         </Button>
 
         
-      </div>
+      </div> */}
 
       {/* Top wave decoration - more subtle */}
       <div className="absolute top-0 left-0 right-0 transform -tranblue-y-1">

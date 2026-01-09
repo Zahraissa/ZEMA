@@ -17,6 +17,7 @@ export default {
 				'2xl': '1400px'
 			}
 		},
+		
 		extend: {
 			fontFamily: {
 				'sans': ['Fredoka', 'Quicksand', 'Nunito', 'ui-sans-serif', 'system-ui', 'sans-serif'],
@@ -116,5 +117,8 @@ export default {
 			}
 		}
 	},
+	
 	plugins: [require("tailwindcss-animate"), require("@tailwindcss/line-clamp")],
+
+	
 } satisfies Config;

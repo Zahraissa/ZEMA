@@ -142,38 +142,52 @@ class MenuService {
         href: "/about", 
         hasDropdown: true,
         dropdownItems: [
-          { name: "Who we are", href: "/about", description: "Mamlaka ya Serikali Mtandao (e-GA) ni taasisi ya umma iliyoanzishwa kwa Sheria ya Serikali Mtandao Na. 10 ya mwaka 2019." },
-          { name: "What we do", href: "/what-we-do", description: "Tunaimarisha na Kuendeleza Utoaji wa Huduma za Serikali Mtandao kwa Taasisi za Umma" },
-          { name: "Message Of Director General", href: "/director-general", description: "Kwa niaba ya Menejimenti na Watumishi wa Mamlaka ya Serikali Mtandao (e-GA), ninayo furaha kuwakaribisha kwenye tovuti yetu mpya" },
+          { name: "Introduction", href: "/about", description: "Zanzibar Environmental Management Authority by its acronym ZEMA was established under the Zanzibar Environmental Management Act, 2015 aiming at coordinating, regulating, monitoring and supervising the environmental management concerns." },
+          { name: "Mission & Vission", href: "/what-we-do", description: "Tunaimarisha na Kuendeleza Utoaji wa Huduma za Serikali Mtandao kwa Taasisi za Umma" },
+          { name: "Main Function", href: "/director-general", description: "Kwa niaba ya Menejimenti na Watumishi wa Mamlaka ya Serikali Mtandao (e-GA), ninayo furaha kuwakaribisha kwenye tovuti yetu mpya" },
+          { name: "Strategic Plan", href: "/director-general", description: "Kwa niaba ya Menejimenti na Watumishi wa Mamlaka ya Serikali Mtandao (e-GA), ninayo furaha kuwakaribisha kwenye tovuti yetu mpya" },
+          { name: "Organization Structure", href: "/director-general", description: "Kwa niaba ya Menejimenti na Watumishi wa Mamlaka ya Serikali Mtandao (e-GA), ninayo furaha kuwakaribisha kwenye tovuti yetu mpya" },
+          { name: "Board of Zema", href: "/director-general", description: "Kwa niaba ya Menejimenti na Watumishi wa Mamlaka ya Serikali Mtandao (e-GA), ninayo furaha kuwakaribisha kwenye tovuti yetu mpya" },
         ]
       },
       { 
-        name: "Regulator System",
+        name: "Our Services",
         href: "/services", 
         hasDropdown: true,
         dropdownItems: [
-          { name: "Introduction", href: "/introduction", description: "Mamlaka kwa kushirikiana na Taasisi mbalimbali za Umma, imesanifu, kujenga na kusimamia mifumo na miundombinu mbalimbali ya TEHAMA" },
-          { name: "Compliance", href: "/accountability-LA", description: "Mamlaka imesanifu na kutengeneza Tovuti mbalimbali za taasisi za umma kwa lengo la kuwezesha utoaji na upatikanaji wa taarifa" },
+          { name: "Enviroment Certificate", href: "/introduction", description: "Mamlaka kwa kushirikiana na Taasisi mbalimbali za Umma, imesanifu, kujenga na kusimamia mifumo na miundombinu mbalimbali ya TEHAMA" },
+          { name: "Enviroment Impact Assesment (EIA)", href: "/accountability-LA", description: "Mamlaka imesanifu na kutengeneza Tovuti mbalimbali za taasisi za umma kwa lengo la kuwezesha utoaji na upatikanaji wa taarifa" },
+          { name: "Enviromental Audit (EA)", href: "/accountability-LA", description: "Mamlaka imesanifu na kutengeneza Tovuti mbalimbali za taasisi za umma kwa lengo la kuwezesha utoaji na upatikanaji wa taarifa" },
+          { name: "Enviromental Report (ER)", href: "/accountability-LA", description: "Mamlaka imesanifu na kutengeneza Tovuti mbalimbali za taasisi za umma kwa lengo la kuwezesha utoaji na upatikanaji wa taarifa" },
+          { name: "Pre Enviromental Audit", href: "/accountability-LA", description: "Mamlaka imesanifu na kutengeneza Tovuti mbalimbali za taasisi za umma kwa lengo la kuwezesha utoaji na upatikanaji wa taarifa" },
+          { name: "Enviroment Direct Clearance ", href: "/accountability-LA", description: "Mamlaka imesanifu na kutengeneza Tovuti mbalimbali za taasisi za umma kwa lengo la kuwezesha utoaji na upatikanaji wa taarifa" },
+          { name: "List of Experts/Firm", href: "/accountability-LA", description: "Mamlaka imesanifu na kutengeneza Tovuti mbalimbali za taasisi za umma kwa lengo la kuwezesha utoaji na upatikanaji wa taarifa" },
+          { name: "Approved Project", href: "/accountability-LA", description: "Mamlaka imesanifu na kutengeneza Tovuti mbalimbali za taasisi za umma kwa lengo la kuwezesha utoaji na upatikanaji wa taarifa" },
         ]
       },
+      // { 
+      //   name: "Library",
+      //   href: "/Library", 
+      //   hasDropdown: true,
+      //   dropdownItems: [
+      //     { name: "Policies And Laws", href: "/policy", description: "Miongozo iliyoandaliwa na Ofisi ya Rais Menejimenti ya Utumishi wa Umma na Utawala Bora" },
+      //     { name: "Regulations And Guidance", href: "/guidelines", description: "Miongozo iliyoandaliwa na Mamlaka ya Serikali Mtandao kwa lengo kutoa maelekezo ya kiufundi" },
+      //   ]
+      // },
       { 
-        name: "Standard and Guidelines",
-        href: "/guidelines", 
+        name: "Library",
+        href: "/Library", 
         hasDropdown: true,
         dropdownItems: [
-          { name: "Policy", href: "/policy", description: "Miongozo iliyoandaliwa na Ofisi ya Rais Menejimenti ya Utumishi wa Umma na Utawala Bora" },
-          { name: "Guidlines", href: "/guidelines", description: "Miongozo iliyoandaliwa na Mamlaka ya Serikali Mtandao kwa lengo kutoa maelekezo ya kiufundi" },
-        ]
-      },
-      { 
-        name: "Media Center",
-        href: "/news", 
-        hasDropdown: true,
-        dropdownItems: [
-          { name: "News And Events", href: "/news", description: "Sehemu hii inaonesha picha za matukio mbalimbali yanayohusiana na e-GA" },
-          { name: "Library", href: "/gallery", description: "Sehemu hii inaonesha video za matukio mbalimbali yanayohusiana na e-GA" },
+          { name: "Policies And Laws", href: "/news", description: "Sehemu hii inaonesha picha za matukio mbalimbali yanayohusiana na e-GA" },
+          { name: "Regulations And Guidance", href: "/gallery", description: "Sehemu hii inaonesha video za matukio mbalimbali yanayohusiana na e-GA" },
           // { name: "Video Library", href: "/news/articles", description: "Sehemu hii ni maalumu kwa ajili ya habari na matukio yote yaliyojiri na yanayohusiana na e-GA" },
         ]
+      },
+      { 
+        name: "Gallery",
+        href: "/gallery", 
+        hasDropdown: false,
       },
       { name: "Contact Us", href: "/contact", hasDropdown: false },
       // { name: "Login", href: "/login", hasDropdown: false}

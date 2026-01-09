@@ -93,13 +93,13 @@ const About = () => {
     },
     mission: {
       title: "Mission",
-      content: "Kujenga mazingira ya kisheria yanayounga mkono maendeleo ya teknolojia na uboreshaji wa huduma kwa wananchi kupitia teknolojia ya kisasa na ubunifu.",
+      content: "To promote sound and sustainable environmental management practices through provision of policy guidance, institutional strengthening and cooperation.",
       icon: "target",
       color: "from-green-500 to-emerald-500"
     },
     vision: {
       title: "Vision",
-      content: "Kuwa kiongozi wa kimataifa katika ubunifu wa teknolojia kwa ajili ya uboreshaji wa huduma za umma na kuunda siku za kesho bora kwa wote.",
+      content: "Sound environment management for sustainable economic and social benefit for present and future generations.",
       icon: "eye",
       color: "from-blue-500 to-blue-600"
     },
@@ -301,14 +301,14 @@ const About = () => {
               <div className="container mx-auto px-4 relative z-10">
                   <div className="text-center max-w-3xl mx-auto">
 
-                      <h1 className="text-5xl md:text-6xl font-bold mb-4 drop-shadow-lg">About Us</h1>
+                      <h1 className="text-5xl md:text-6xl font-bold mb-4 drop-shadow-lg">INTRODUCTION</h1>
                       <nav className="flex justify-center items-center space-x-2 text-sm text-blue-100">
                           <a href="/" className="flex items-center gap-1 hover:text-white transition-colors">
                               <HomeIcon className="w-4 h-4 text-white" />
                               <span>Home</span>
                           </a>
                           <span>/</span>
-                          <span className="text-white font-medium">About Us</span>
+                          <span className="text-white font-medium">INTRODUCTION</span>
                       </nav>
 
                   </div>
@@ -336,7 +336,7 @@ const About = () => {
       <div className="min-h-screen bg-gradient-to-br from-gray-50 via-blue-50/30 to-gray-50">
         <Header />
           {/* Enhanced Page Header */}
-          <section className="relative bg-green-500 text-white py-20 overflow-hidden">
+          <section className="relative bg-green-500 text-white py-2 overflow-hidden">
               <div className="absolute inset-0 bg-black/10"></div>
               <div className="absolute inset-0 opacity-20" style={{
                   backgroundImage: `url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23ffffff' fill-opacity='0.05'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E")`
@@ -344,21 +344,21 @@ const About = () => {
               <div className="container mx-auto px-4 relative z-10">
                   <div className="text-center max-w-3xl mx-auto">
 
-                      <h1 className="text-5xl md:text-6xl font-bold mb-4 drop-shadow-lg">About Us</h1>
+                      <h1 className="text-5xl md:text-6xl font-serif font-bold mb-4 drop-shadow-lg">INTRODUCTION</h1>
                       <nav className="flex justify-center items-center space-x-2 text-sm text-blue-100">
                           <a href="/" className="flex items-center gap-1 hover:text-white transition-colors">
                               <HomeIcon className="w-4 h-4 text-white" />
                               <span>Home</span>
                           </a>
                           <span>/</span>
-                          <span className="text-white font-medium">About Us</span>
+                          <span className="text-white font-medium">INRODUCTION</span>
                       </nav>
 
                   </div>
               </div>
           </section>
 
-        <div className="flex items-center justify-center min-h-[60vh]">
+        {/* <div className="flex items-center justify-center min-h-[60vh]">
           <div className="text-center bg-white rounded-2xl shadow-lg p-8 max-w-md mx-4">
             <div className="p-3 bg-red-100 rounded-full w-16 h-16 mx-auto mb-4 flex items-center justify-center">
               <Building className="w-8 h-8 text-red-600" />
@@ -371,7 +371,24 @@ const About = () => {
               Try again
             </button>
           </div>
-        </div>
+        </div> */}
+      <section className="py-16">
+  <div className="container mx-auto px-4 max-w-5xl">
+    <p className="text-gray-800 text-base leading-relaxed text-justify">
+     Zanzibar Environmental Management Authority by its acronym ZEMA was established under the Zanzibar Environmental Management Act, 2015 aiming at coordinating, regulating, monitoring and supervising the environmental management concerns.
+    </p>
+
+    <p className="text-gray-800 text-base leading-relaxed text-justify mt-4">
+      The prime objective which was crucial for the establishment of this Authority was to bring harmony in the management and enforcement of environment in Zanzibar.The prime objective which was crucial for the establishment of this Authority was to bring harmony in the management and enforcement of environment in Zanzibar.
+    </p>
+
+    <p className="text-gray-800 text-base leading-relaxed text-justify mt-4">
+      The main pre occupation of ZEMA therefore is enforcement, compliance, review and monitor all environmental activities in Zanzibar.
+    </p>
+  </div>
+</section>
+
+
         <Footer />
       </div>
     );
@@ -382,7 +399,7 @@ const About = () => {
       <Header />
 
       {/* Enhanced Page Header */}
-      <section className="relative bg-green-500 text-white py-20 overflow-hidden">
+      <section className="relative bg-blue-500 text-white py-20 overflow-hidden">
         <div className="absolute inset-0 bg-black/10"></div>
         <div className="absolute inset-0 opacity-20" style={{
           backgroundImage: `url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23ffffff' fill-opacity='0.05'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E")`
@@ -397,7 +414,7 @@ const About = () => {
                       <span>Home</span>
                   </a>
                   <span>/</span>
-                  <span className="text-white font-medium">About Us</span>
+                  <span className="text-white font-medium">INTRODUCTION</span>
               </nav>
 
           </div>
@@ -412,22 +429,22 @@ const About = () => {
             {/* Enhanced Sidebar Navigation */}
             <div className="lg:col-span-1">
               <div className="bg-white rounded-2xl shadow-lg border-2 border-gray-100 p-6 sticky top-8 hover:shadow-xl transition-shadow">
-                <div className="flex items-center gap-3 mb-6 pb-4 border-b-2 border-green-600">
+                <div className="flex items-center gap-3 mb-6 pb-4 border-b-2 border-blue-600">
                   <div className="p-2 bg-green-400 rounded-lg">
                     <InfoIcon className="w-5 h-5 text-white" />
                   </div>
                   <h3 className="text-lg font-bold text-gray-600">
-                    ABOUT US
+                    INTRODUCTION
                   </h3>
                 </div>
                 <nav className="space-y-1">
-                  <a href="/about" className="block text-gray-800 font-bold bg-green-100 py-2 px-3 rounded-lg border-l-4 border-green-600">
+                  <a href="/about" className="block text-gray-800 font-bold bg-blue-100 py-2 px-3 rounded-lg border-l-4 border-green-600">
                     Who we are
                   </a>
-                  <a href="/director-general" className="block text-gray-600 hover:text-black hover:bg-green-100 transition-all py-2 hover:px-3 rounded-lg">
+                  <a href="/director-general" className="block text-gray-600 hover:text-black hover:bg-blue-100 transition-all py-2 hover:px-3 rounded-lg">
                     Message Of Director General
                   </a>
-                  <a href="/what-we-do" className="block text-gray-600 hover:text-black hover:bg-green-100 transition-all py-2 hover:px-3 rounded-lg">
+                  <a href="/what-we-do" className="block text-gray-600 hover:text-black hover:bg-blue-100 transition-all py-2 hover:px-3 rounded-lg">
                     What we do
                   </a>
                 </nav>

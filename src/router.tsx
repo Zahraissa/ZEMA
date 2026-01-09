@@ -150,6 +150,10 @@ export const router = createBrowserRouter([
         element: <DirectorGeneral />,
     },
     {
+        path: "/director-general",
+        element: <DirectorGeneral />,
+    },
+    {
         path: "/news",
         element: <News />,
     },

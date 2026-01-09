@@ -42,8 +42,8 @@ interface NavigationItem {
 
 const translations = {
   sw: {
-    title: "WIZARA YA BIASHARA NA VIWANDA",
-    subtitle: "MAMLAKA YA UDHIBITI WA LESENI ZA BIASHARA",
+    title: "ZANZIBAR ENVIROMENT MANAGEMENT AUTHORITY",
+    subtitle: "(ZEMA)",
     search: "Tafuta...",
     weather: "Hali ya Hewa",
     navigation: "Menyu",
@@ -64,8 +64,8 @@ const translations = {
     allServices: "Huduma Zote",
   },
   en: {
-    title: "MINISTRY OF TRADE AND INDUSTRIAL DEVELOPMENT",
-    subtitle: "BUSINESS LICENSING REGULATORY COUNCIL",
+    title: "ZANZIBAR ENVIROMENT MANAGEMENT AUTHORITY",
+    subtitle: "(ZEMA)",
     search: "Search...",
     weather: "Weather",
     navigation: "Navigation",
@@ -187,7 +187,7 @@ const Header = () => {
         className={`hidden sm:flex justify-between items-center px-6 py-4 bg-white transition-all duration-300 ${isScrolled ? "opacity-0 h-0 overflow-hidden" : "opacity-100"
           }`}
         style={{
-          backgroundImage: "url('/banner-background.jpg')",
+          backgroundImage: "url('/bg2.png')",
           backgroundRepeat: "no-repeat",
           backgroundSize: "cover",
           backgroundPosition: "center",
@@ -202,17 +202,17 @@ const Header = () => {
         </div>
 
         <div className="flex flex-col items-center text-center notranslate mx-4 flex-1 max-w-4xl">
-          <h1 className="text-gray-900 font-bold text-xl lg:text-2xl xl:text-3xl leading-tight bg-gradient-to-r from-green-600 to-green-800 bg-clip-text text-transparent px-4 break-words whitespace-normal">
+          <h1 className="text-green-900 font-serif font-bold text-xl lg:text-xl xl:text-2xl leading-tight bg-gradient-to-r from-green-600 to-green-800 bg-clip-text text-transparent px-4 break-words whitespace-normal">
             {translations[lang].title}
           </h1>
-          <p className="text-gray-800 text-xl lg:text-2xl xl:text-3xl font-semibold mt-2 px-4 break-words whitespace-normal">
+          <p className="text-green-800 text-xl lg:text-2xl xl:text-2xl font-serif font-bold mt-2 px-4 break-words whitespace-normal">
             {translations[lang].subtitle}
           </p>
         </div>
 
         <div className="w-32 h-20 flex-shrink-0 transform hover:scale-105 transition-transform duration-300">
           <img
-            src="/Logo_zie.png"
+            src="img/ZanzibarGif.gif"
             alt="Logo"
             className="w-full h-full object-contain drop-shadow-lg"
           />
@@ -222,7 +222,7 @@ const Header = () => {
       {/* Main Navigation */}
       <div
         className={`${isScrolled
-          ? "fixed top-0 left-0 right-0 z-50 shadow-2xl bg-gradient-to-r from-green-600 via-green-600 to-green-600 animate-slideDown bg-opacity-95 container"
+          ? "fixed top-0 left-0 right-0 z-50 shadow-2xl bg-gradient-to-r from-green-600 via-green-600 to-blue-green animate-slideDown bg-opacity-95 container"
           : "relative shadow-lg bg-gradient-to-r from-green-600 via-green-600 to-green-600"
           } transition-all duration-100 border-b border-white/20`}
       >

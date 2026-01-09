@@ -61,21 +61,45 @@ const ServiceSection = () => {
 
   if (services.length === 0) {
     return (
-      <section className="container mx-auto px-4">
-        <div className="flex flex-col lg:flex-row justify-between -mx-4 mb-8 sm:mb-12">
-            <div className="w-full lg:w-7/12 px-4 mb-6 lg:mb-0">
-                <h2 className="text-2xl sm:text-3xl md:text-4xl font-normal text-gray-900">
-                    OUR SERVICES
-                </h2>
-            </div>
-        </div>
-          <div className="flex flex-col p-4 items-center mb-8 sm:mb-12">
+      <section className="container mx-auto px-4 py-12">
+  <div className="flex flex-col lg:flex-row items-center gap-10">
 
-              <p className="text-center text-gray-600 animate-fade-in text-sm sm:text-base max-w-xl">
-                  Theres no services at the moment or network error encountered.
-              </p>
-          </div>
-      </section>
+     {/* Picha */}
+    <div className="w-full lg:w-1/2">
+  <div className="w-full h-[350px] sm:h-[420px] bg-yellow-100 flex items-center justify-center shadow-[0_0_2px_2px_blue,0_0_10px_10px_#ffd700]">
+    <img
+      src="/img/DOE.jpg"
+      alt="About us"
+      className="w-full h-full object-contain"
+    />
+  </div>
+</div>
+
+    {/* Maelezo */}
+    <div className="w-full lg:w-1/2">
+      
+      {/* Title iko hapa */}
+      <h2 className="text-2xl sm:text-3xl md:text-4xl font-normal text-gray-900 mb-20 text-left">
+        ABOUT US
+      </h2>
+
+      <p className="text-black-600 text-sm sm:text-base leading-relaxed mb-4 animate-fade-in">
+        Zanzibar Environmental Management Authority by its acronym ZEMA was established under the Zanzibar Environmental Management Act, 2015 aiming at coordinating, regulating, monitoring and supervising the environmental management concerns.
+      </p>
+
+      <p className="text-black-600 text-sm sm:text-base leading-relaxed mb-4">
+       The prime objective which was crucial for the establishment of this Authority was to bring harmony in the management and enforcement of environment in Zanzibar.
+      </p>
+
+      <p className="text-black-600 text-sm sm:text-base leading-relaxed">
+        The main pre occupation of ZEMA therefore is enforcement, compliance, review and monitor all environmental activities in Zanzibar.
+      </p>
+    </div>
+
+  </div>
+</section>
+
+
     );
   }
 
@@ -92,7 +116,7 @@ const ServiceSection = () => {
         <div className="flex flex-col lg:flex-row justify-between -mx-4 mb-8 sm:mb-12">
           <div className="w-full lg:w-7/12 px-4 mb-6 lg:mb-0">
             <h2 className="text-2xl sm:text-3xl md:text-4xl font-normal text-gray-900">
-                OUR SERVICES
+                ABOUT US
             </h2>
           </div>
         </div>
