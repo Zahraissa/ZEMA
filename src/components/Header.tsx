@@ -222,7 +222,7 @@ const Header = () => {
       {/* Main Navigation */}
       <div
         className={`${isScrolled
-          ? "fixed top-0 left-0 right-0 z-50 shadow-2xl bg-gradient-to-r from-green-600 via-green-600 to-blue-green animate-slideDown bg-opacity-95 container"
+          ? "fixed top-0 left-0 right-0 z-50 shadow-2xl bg-gradient-to-r from-green-300/70 via-green-300/70 to-green-300/70 animate-slideDown bg-opacity-95 container"
           : "relative shadow-lg bg-gradient-to-r from-green-600 via-green-600 to-green-600"
           } transition-all duration-100 border-b border-white/20`}
       >

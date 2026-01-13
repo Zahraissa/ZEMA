@@ -74,7 +74,7 @@ const DirectorGeneral = () => {
               <div className="container mx-auto px-4 relative z-10">
                   <div className="text-center max-w-3xl mx-auto">
 
-                      <h1 className="text-5xl md:text-6xl font-serif font-bold mb-4 drop-shadow-lg">FUNCTION OF THE ZEMA</h1>
+                      <h1 className="text-5xl md:text-6xl font-serif font-bold mb-4 drop-shadow-lg">DierectorGeneral</h1>
                       <nav className="flex justify-center items-center space-x-2 text-sm text-blue-100">
                           <a href="/" className="flex items-center gap-1 hover:text-white transition-colors">
                               <HomeIcon className="w-4 h-4 text-white" />
@@ -117,7 +117,7 @@ const DirectorGeneral = () => {
               <div className="container mx-auto px-4 relative z-10">
                   <div className="text-center max-w-3xl mx-auto">
 
-                      <h1 className="text-5xl md:text-6xl font-serif font-bold mb-4 drop-shadow-lg">FUNCTION OF THE ZEMA</h1>
+                      <h1 className="text-5xl md:text-6xl font-serif font-bold mb-4 drop-shadow-lg">DierectorGeneral</h1>
                       <nav className="flex justify-center items-center space-x-2 text-sm text-blue-100">
                           <a href="/" className="flex items-center gap-1 hover:text-white transition-colors">
                               <HomeIcon className="w-4 h-4 text-white" />
@@ -131,7 +131,7 @@ const DirectorGeneral = () => {
               </div>
           </section>
 
-          {/* <div className="flex items-center justify-center min-h-[60vh]">
+          <div className="flex items-center justify-center min-h-[60vh]">
           <div className="text-center bg-white rounded-2xl shadow-lg p-8 max-w-md mx-4">
             <div className="p-3 bg-red-100 rounded-full w-16 h-16 mx-auto mb-4 flex items-center justify-center">
               <User className="w-8 h-8 text-red-600" />
@@ -144,92 +144,7 @@ const DirectorGeneral = () => {
               Try again
             </button>
           </div>
-        </div> */}
-        <section className="py-16 bg-white">
-  <div className="container mx-auto px-4 max-w-6xl">
-
-    <p className="text-black-700 leading-relaxed font-serif text-justify mb-4">
-      Under the Zanzibar Environmental Management Act No. 3 of 2015, the Zanzibar
-      Environmental Management Authority (ZEMA) has been entrusted with a number
-      of functions to help safeguard the environment. ZEMA is mandated to issue
-      environmental certificates, permits and approvals, undertake environmental
-      monitoring, promote environmental awareness, and enforce environmental
-      regulations and standards.
-    </p>
-
-    <p className="text-black-700 leading-relaxed font-serif text-justify mb-6">
-      For more details, see Section 22(1) of the Environmental Management Act.
-    </p>
-
-    <p className="text-black-800 font-serif font-bold mb-4">
-      The following sections have a role in exercising the functions of ZEMA:
-    </p>
-
-    <ul className="list-disc pl-6 space-y-4 font-serif text-black-700 text-justify">
-      <li>
-        <span className="font-serif font-bold">
-          Administration and Finance:
-        </span>{" "}
-        Deals with human resources within ZEMA and matters related to financial
-        administration, mobilization of funds, coordination of cross-cutting
-        issues such as gender, HIV/AIDS, disability and drugs, preparation of
-        budgets, and coordination of staff training.
-      </li>
-
-      <li>
-        <span className="font-serif font-bold">
-          Enforcement and Compliance:
-        </span>{" "}
-        Coordinates the implementation of the Zanzibar Environmental Management
-        Act, manages enforcement of regulations, ensures compliance with
-        environmental standards and guidelines, and prosecutes cases related to
-        environmental degradation and pollution, including violations of the
-        Zanzibar Environmental Management Act, 2015.
-      </li>
-
-      <li>
-        <span className="font-serif font-bold">
-          Environmental Planning and Monitoring:
-        </span>{" "}
-        Conducts environmental monitoring to support better management and
-        protection of the environment, including biodiversity, marine and
-        terrestrial ecosystems, coastal zone management, natural resources, and
-        waste and wastewater disposal. It also prepares guidelines and proposes
-        locations for the destruction of unfit products.
-      </li>
-
-      <li>
-        <span className="font-serif font-bold">
-          Environmental Impact Assessment (EIA):
-        </span>{" "}
-        Coordinates EIA procedures, issues environmental assessment certificates,
-        builds capacity for communities and institutions on EIA processes,
-        monitors compliance with EIA certificate conditions, and maintains
-        records of registered EIA and audit experts and firms in Zanzibar.
-      </li>
-
-      <li>
-        <span className="font-serif font-bold">
-          Environmental Information and Communication:
-        </span>{" "}
-        Provides environmental information to the public and stakeholders,
-        receives and responds to environmental complaints, and operates the
-        Zanzibar Environmental Information Management System.
-      </li>
-
-      <li>
-        <span className="font-serif font-bold">
-          Office of the Authority in Pemba:
-        </span>{" "}
-        Oversees the implementation of all ZEMA responsibilities in Pemba. This
-        office performs the same functions and responsibilities as ZEMA in
-        Unguja.
-      </li>
-    </ul>
-
-  </div>
-</section>
-
+        </div>
         <Footer />
       </div>
     );

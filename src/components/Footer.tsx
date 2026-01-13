@@ -293,7 +293,7 @@ const Footer = () => {
           <div className="flex flex-col sm:flex-row justify-center items-center space-y-4 sm:space-y-0">
             <div className="text-center sm:text-left">
               <p className="text-white text-sm">
-                Copyright © {new Date().getFullYear()}, {" "}
+                 © {new Date().getFullYear()}, {" "}
                 <span className="text-yellow-400 font-serif font-bold">
                    -ZANZIBAR ENVIROMENT MANAGEMENT AUTHORITY (ZEMA)
         </span>

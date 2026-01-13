@@ -84,14 +84,14 @@ const WhatWeDo = () => {
               <div className="container mx-auto px-4 relative z-10">
                   <div className="text-center max-w-3xl mx-auto">
 
-                      <h1 className="text-5xl md:text-6xl font-serif font-bold mb-4 drop-shadow-lg">Mission & Vission</h1>
+                      <h1 className="text-5xl md:text-6xl font-serif font-bold mb-4 drop-shadow-lg">What we do</h1>
                       <nav className="flex justify-center items-center space-x-2 text-sm text-blue-100">
                           <a href="/" className="flex items-center gap-1 hover:text-white transition-colors">
                               <HomeIcon className="w-4 h-4 text-white" />
                               <span>Home</span>
                           </a>
                           <span>/</span>
-                          <span className="text-white font-medium">Mission & Vission</span>
+                          <span className="text-white font-medium">What we do</span>
                       </nav>
 
                   </div>
@@ -127,21 +127,21 @@ const WhatWeDo = () => {
               <div className="container mx-auto px-4 relative z-10">
                   <div className="text-center max-w-3xl mx-auto">
 
-                      <h1 className="text-5xl md:text-6xl font-serif font-bold mb-4 drop-shadow-lg">Mission & Vission</h1>
+                      <h1 className="text-5xl md:text-6xl font-serif font-bold mb-4 drop-shadow-lg">What we do</h1>
                       <nav className="flex justify-center items-center space-x-2 text-sm text-blue-100">
                           <a href="/" className="flex items-center gap-1 hover:text-white transition-colors">
                               <HomeIcon className="w-4 h-4 text-white" />
                               <span>Home</span>
                           </a>
                           <span>/</span>
-                          <span className="text-white font-medium">Mission & Vission</span>
+                          <span className="text-white font-medium">What we do</span>
                       </nav>
 
                   </div>
               </div>
           </section>
 
-          {/* <div className="flex items-center justify-center min-h-[60vh]">
+          <div className="flex items-center justify-center min-h-[60vh]">
           <div className="text-center bg-white rounded-2xl shadow-lg p-8 max-w-md mx-4">
             <div className="p-3 bg-red-100 rounded-full w-16 h-16 mx-auto mb-4 flex items-center justify-center">
               <Briefcase className="w-8 h-8 text-red-600" />
@@ -154,12 +154,12 @@ const WhatWeDo = () => {
               Jaribu tena
             </button>
           </div>
-        </div> */}
-        <section className="py-16 bg-white">
+        </div>
+        {/* <section className="py-16 bg-white">
   <div className="container mx-auto px-4">
     <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 items-center">
 
-      {/* IMAGE SIDE */}
+      
       <div className="order-1 lg:order-2 flex justify-center">
         <img
           src="/img/MissionVission.jpg"
@@ -172,7 +172,7 @@ const WhatWeDo = () => {
         />
       </div>
 
-      {/* TEXT SIDE */}
+      
       <div className="order-2 lg:order-1">
         <p className="text-black-700 leading-relaxed font-serif text-justify mb-6">
           ZEMA supports the overall objective of the Zanzibar Environmental
@@ -199,7 +199,7 @@ const WhatWeDo = () => {
 
     </div>
   </div>
-</section>
+</section> */}
 
 
         <Footer />
