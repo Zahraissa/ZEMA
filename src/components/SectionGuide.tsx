@@ -127,7 +127,7 @@ export default function GuidesSection() {
     <section className="w-full py-12 md:py-24 lg:py-32 bg-gray-50 from-white to-slate-50/50 dark:bg-gradient-to-b dark:from-neutral-900 dark:to-neutral-800">
       <div className="container mx-auto px-4 px-4">
           <h5 className="text-2xl font-normal tracking-tighter p-5 sm:text-4xl">
-              DIRECTOR MESSAGE
+              GUIDE LINE
           </h5>
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
           {loading ? (

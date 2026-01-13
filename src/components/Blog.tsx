@@ -102,7 +102,7 @@ const BlogSection = () => {
           <div className="flex flex-col md:flex-row justify-between items-center mb-12 text-center md:text-left">
             <div className="md:w-7/12 mb-6 md:mb-0">
               <h2 className="text-3xl md:text-4xl font-normal text-gray-900">
-                Web Tools
+                News
               </h2>
             </div>
             <div className="md:w-auto">
@@ -135,7 +135,7 @@ const BlogSection = () => {
         <div className="flex flex-col md:flex-row justify-between items-center mb-12 text-center md:text-left">
           <div className="md:w-7/12 mb-6 md:mb-0">
             <h2 className="text-3xl md:text-4xl font-normal text-gray-900">
-              Web Tools
+              News
             </h2>
           </div>
           <div className="md:w-auto">
