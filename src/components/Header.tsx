@@ -184,7 +184,7 @@ const Header = () => {
 
       {/* Logo Section */}
       <div
-        className={`hidden sm:flex justify-center items-center px-6 py-4 bg-white transition-all duration-300 ${isScrolled ? "opacity-0 h-0 overflow-hidden" : "opacity-100"
+        className={`hidden sm:flex justify-between items-center px-6 py-4 bg-white transition-all duration-300 ${isScrolled ? "opacity-0 h-0 overflow-hidden" : "opacity-100"
           }`}
         style={{
           backgroundImage: "url('/bg2.png')",
