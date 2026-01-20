@@ -163,7 +163,7 @@ const DirectorGeneral = () => {
             <div className="container mx-auto px-4 relative z-10">
                 <div className="text-center max-w-3xl mx-auto">
 
-                    <h1 className="text-5xl md:text-6xl font-serif font-bold mb-4 drop-shadow-lg">FUNCTION OF THE ZEMA</h1>
+                    <h1 className="text-5xl md:text-6xl font-serif font-bold mb-4 drop-shadow-lg">DirectorGeneral</h1>
                     <nav className="flex justify-center items-center space-x-2 text-sm text-blue-100">
                         <a href="/" className="flex items-center gap-1 hover:text-white transition-colors">
                             <HomeIcon className="w-4 h-4 text-white" />
