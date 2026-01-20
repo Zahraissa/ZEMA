@@ -9,10 +9,10 @@ import {
   faYoutube,
 } from "@fortawesome/free-brands-svg-icons";
 import {
-  faPhone,
-  faEnvelope,
-  faMapMarkerAlt,
-  faArrowUp,
+    faPhone,
+    faEnvelope,
+    faMapMarkerAlt,
+    faArrowUp, faEnvelopeOpenText,
 } from "@fortawesome/free-solid-svg-icons";
 import { Button } from "./ui/button";
 import {
@@ -24,7 +24,7 @@ import {
     Settings,
     User,
     X,
-    Sparkles, Facebook, Twitter, Instagram, Linkedin,
+    Sparkles, Facebook, Twitter, Instagram, Linkedin, Youtube,
 } from "lucide-react";
 import { FaYoutubeSquare } from "react-icons/fa";
 import { useLanguage } from "./LanguageContext";
@@ -68,54 +68,55 @@ const Footer = () => {
   const [isVisible, setIsVisible] = useState(true);
 
   return (
-    <footer className="relative bg-green-500 text-white overflow-hidden">
+    <footer className="relative bg-[#2b8a57] text-white overflow-hidden">
       {/* Minimal grid pattern */}
       <div className="absolute inset-0 bg-[linear-gradient(rgba(255,255,255,0.02)_1px,transparent_1px),linear-gradient(90deg,rgba(255,255,255,0.02)_1px,transparent_1px)] bg-[size:64px_64px] [mask-image:radial-gradient(ellipse_80%_50%_at_50%_50%,black,transparent)]"></div>
 
       <div className="container mx-auto px-4 relative z-10 pt-16 pb-8">
 
-        {/* Widgets Section */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 mb-12">
           {/*/!* About Widget *!/*/}
           {/*<div className="sm:col-span-2 lg:col-span-1">*/}
-          {/*  <div className="bg-white/5 backdrop-blur-lg rounded-2xl p-6 border border-blue-600/30 hover:border-blue-500/50 transition-all duration-300">*/}
-          {/*    <h3 className="text-xl font-light mb-4 text-blue-100">*/}
-          {/*      Kuhusu eGAZ*/}
-          {/*    </h3>*/}
-          {/*    <p className="text-blue-300 mb-6 text-base leading-relaxed">*/}
-          {/*      Mamlaka ya Serikali Mtandao Zanzibar (eGAZ) inatoa huduma bora za*/}
-          {/*      serikali kupitia teknolojia ya kisasa kwa ajili ya maendeleo*/}
-          {/*      endelevu.*/}
-          {/*    </p>*/}
-          {/*    <div className="flex space-x-4">*/}
-          {/*      {[*/}
-          {/*        {*/}
-          {/*          icon: faFacebookF,*/}
-          {/*          href: "https://web.facebook.com/egazanzibar?_rdc=1&_rdr#",*/}
-          {/*        },*/}
-          {/*        { icon: faYoutube, href: "https://www.youtube.com/@eGAZtv" },*/}
-          {/*        {*/}
-          {/*          icon: faInstagram,*/}
-          {/*          href: "https://www.instagram.com/ega_zanzibar/",*/}
-          {/*        },*/}
-          {/*      ].map((social, index) => (*/}
-          {/*        <a*/}
-          {/*          key={index}*/}
-          {/*          href={social.href}*/}
-          {/*          className="bg-white/10 backdrop-blur-sm p-3 rounded-xl hover:bg-blue-600/50 transition-all duration-300 hover:scale-110 border border-blue-500/30"*/}
-          {/*        >*/}
-          {/*          <FontAwesomeIcon*/}
-          {/*            icon={social.icon}*/}
-          {/*            className="h-5 w-5 text-blue-200"*/}
-          {/*          />*/}
-          {/*        </a>*/}
-          {/*      ))}*/}
+          {/*    <div className="backdrop-blur-lg transition-all duration-300">*/}
+          {/*        <h3 className="text-xl font-light mb-4 text-blue-100">*/}
+          {/*            Kuhusu eGAZ*/}
+          {/*        </h3>*/}
+          {/*        <p className="text-blue-300 mb-6 text-base leading-relaxed">*/}
+          {/*            Mamlaka ya Serikali Mtandao Zanzibar (eGAZ) inatoa huduma bora za*/}
+          {/*            serikali kupitia teknolojia ya kisasa kwa ajili ya maendeleo*/}
+          {/*            endelevu.*/}
+          {/*        </p>*/}
+          {/*        <div className="flex space-x-4">*/}
+          {/*            {[*/}
+          {/*                {*/}
+          {/*                    icon: faFacebookF,*/}
+          {/*                    href: "https://web.facebook.com/egazanzibar?_rdc=1&_rdr#",*/}
+          {/*                },*/}
+          {/*                { icon: faYoutube, href: "https://www.youtube.com/@eGAZtv" },*/}
+          {/*                {*/}
+          {/*                    icon: faInstagram,*/}
+          {/*                    href: "https://www.instagram.com/ega_zanzibar/",*/}
+          {/*                },*/}
+          {/*            ].map((social, index) => (*/}
+          {/*                <a*/}
+          {/*                    key={index}*/}
+          {/*                    href={social.href}*/}
+          {/*                    className="bg-white/10 backdrop-blur-sm p-3 rounded-xl hover:bg-blue-600/50 transition-all duration-300 hover:scale-110 border border-blue-500/30"*/}
+          {/*                >*/}
+          {/*                    <FontAwesomeIcon*/}
+          {/*                        icon={social.icon}*/}
+          {/*                        className="h-5 w-5 text-blue-200"*/}
+          {/*                    />*/}
+          {/*                </a>*/}
+          {/*            ))}*/}
+          {/*        </div>*/}
           {/*    </div>*/}
-          {/*  </div>*/}
           {/*</div>*/}
 
+        {/* Widgets Section */}
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 mb-12">
+
           {/* Useful Links Widget */}
-          <div className="bg-white/5 backdrop-blur-lg rounded-2xl p-6 hover:border-blue-500/50 transition-all duration-300">
+          <div className=" backdrop-blur-lg rounded-2xl p-6 hover:border-blue-500/50 transition-all duration-300">
             <h3 className="text-xl font-light mb-6 text-white">
               Our Partners
             </h3>
@@ -140,7 +141,7 @@ const Footer = () => {
           </div>
 
           {/* Services Widget */}
-          <div className="bg-white/5 backdrop-blur-lg rounded-2xl p-6 hover:border-blue-500/50 transition-all duration-300">
+          <div className=" backdrop-blur-lg rounded-2xl p-6 hover:border-blue-500/50 transition-all duration-300">
             <h3 className="text-xl font-light mb-6 text-white">
              Related Links
             </h3>
@@ -164,37 +165,37 @@ const Footer = () => {
             </ul>
           </div>
 
-          <div className="bg-white/5 backdrop-blur-lg rounded-2xl p-6 hover:border-blue-500/50 transition-all duration-300">
-            <h3 className="text-xl font-light mb-6 text-white">
-             User Guide
-            </h3>
-            <ul className="space-y-3">
-              {[
-                { text: "ZEMA ACT:2015", href: "pdf_data/rules/Zanzibar Environmental Management Act, 2015.pdf" },
-                { text: "Zanzibar Environmental Policy- 2013", href: "pdf_data/rules/ZANZIBAR ENVIONMENTAL POLICY 2013.pdf" },
-                { text: "Regulation of Plastic Bags-2018", href: "pdf_data/rules/Regulation_Plastic Bags_2018.pdf" },
-                { text: "EIA Form", href: "pdf_data/EIA_FORM.pdf" },
-                { text: "List of Registered Experts/Firms 2022/23", href: "javascript:void(0)" },
-                { text: "For more Regulation and Guidance", href: "javascript:void(0)" },
-                { text: "For more Policies And Laws", href: "javascript:void(0)" },
-              ].map((service, index) => (
-                <li key={index}>
-                  <a
-                    href={service.href}
-                    className="text-white hover:text-blue-100 transition-all duration-300 flex items-center gap-2 group"
-                  >
-                    <div className="w-1.5 h-1.5 bg-white rounded-full group-hover:bg-blue-400 group-hover:scale-125 transition-transform"></div>
-                    {service.text}
-                  </a>
-                </li>
-              ))}
-            </ul>
-          </div>
+          {/*<div className=" backdrop-blur-lg rounded-2xl p-6 hover:border-blue-500/50 transition-all duration-300">*/}
+          {/*  <h3 className="text-xl font-light mb-6 text-white">*/}
+          {/*   User Guide*/}
+          {/*  </h3>*/}
+          {/*  <ul className="space-y-3">*/}
+          {/*    {[*/}
+          {/*      { text: "ZEMA ACT:2015", href: "pdf_data/rules/Zanzibar Environmental Management Act, 2015.pdf" },*/}
+          {/*      { text: "Zanzibar Environmental Policy- 2013", href: "pdf_data/rules/ZANZIBAR ENVIONMENTAL POLICY 2013.pdf" },*/}
+          {/*      { text: "Regulation of Plastic Bags-2018", href: "pdf_data/rules/Regulation_Plastic Bags_2018.pdf" },*/}
+          {/*      { text: "EIA Form", href: "pdf_data/EIA_FORM.pdf" },*/}
+          {/*      { text: "List of Registered Experts/Firms 2022/23", href: "javascript:void(0)" },*/}
+          {/*      { text: "For more Regulation and Guidance", href: "javascript:void(0)" },*/}
+          {/*      { text: "For more Policies And Laws", href: "javascript:void(0)" },*/}
+          {/*    ].map((service, index) => (*/}
+          {/*      <li key={index}>*/}
+          {/*        <a*/}
+          {/*          href={service.href}*/}
+          {/*          className="text-white hover:text-blue-100 transition-all duration-300 flex items-center gap-2 group"*/}
+          {/*        >*/}
+          {/*          <div className="w-1.5 h-1.5 bg-white rounded-full group-hover:bg-blue-400 group-hover:scale-125 transition-transform"></div>*/}
+          {/*          {service.text}*/}
+          {/*        </a>*/}
+          {/*      </li>*/}
+          {/*    ))}*/}
+          {/*  </ul>*/}
+          {/*</div>*/}
 
           {/* Contact Widget */}
-          {/* <div className="bg-white/5 backdrop-blur-lg rounded-2xl p-6 hover:border-blue-500/50 transition-all duration-300">
+          <div className=" backdrop-blur-lg rounded-2xl p-6 hover:border-blue-500/50 transition-all duration-300">
             <h3 className="text-xl font-light mb-6 text-white">
-              Wasiliana Nasi
+              Contact Us
             </h3>
             <div className="space-y-4">
               <div className="flex items-start space-x-4">
@@ -213,6 +214,22 @@ const Footer = () => {
                   </p>
                 </div>
               </div>
+                <div className="flex items-start space-x-4">
+                    <div className="bg-white/10 backdrop-blur-sm p-2 rounded-lg mt-1 border border-blue-100">
+                        <FontAwesomeIcon
+                            icon={faEnvelopeOpenText}
+                            className="text-white h-4 w-4"
+                        />
+                    </div>
+                    <div>
+                        <p className="text-white text-base font-medium">
+                            P.O. Box 280826
+                        </p>
+                        <p className="text-blue-100 text-base font-medium">
+                            Malawi Road,Maruhubi, 71111 Mjini Magharib, Zanzibar.
+                        </p>
+                    </div>
+                </div>
               <div className="flex items-start space-x-4">
                 <div className="bg-white/10 backdrop-blur-sm p-2 rounded-lg mt-1 border border-blue-100">
                   <FontAwesomeIcon
@@ -225,7 +242,7 @@ const Footer = () => {
                         Hotline
                     </p>
                   <p className="text-blue-100 text-base font-medium">
-                      +255 776 942 258
+                      +255 773 734240
                   </p>
                 </div>
               </div>
@@ -241,16 +258,16 @@ const Footer = () => {
                       Email Us
                   </p>
                   <p className="text-blue-100 text-sm">
-                      info@blrasmz.go.tz
+                      info@zema.go.tz
                   </p>
                 </div>
               </div>
             </div>
-          </div> */}
+          </div>
           </div>
 
           {/*social links*/}
-          {/* <div className="row-start-1 flex items-center space-x-4 p-3">
+          <div className="row-start-1 flex items-center space-x-4 p-3">
               <a
                   href="https://facebook.com"
                   target="_blank"
@@ -279,91 +296,36 @@ const Footer = () => {
               </a>
 
               <a
-                  href="https://linkedin.com"
+                  href="https://youtube.com"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="flex items-center justify-center w-10 h-10 rounded-full border border-gray-300 bg-white text-gray-600 hover:bg-blue-700 hover:text-white transition-all duration-300"
+                  className="flex items-center justify-center w-10 h-10 rounded-full border border-gray-300 bg-white text-gray-600 hover:bg-red-600 hover:text-white transition-all duration-300"
               >
-                  <Linkedin className="w-5 h-5" />
+                  <Youtube className="w-5 h-5" />
               </a>
-          </div> */}
+          </div>
 
         {/* Bottom Section */}
-        <div className="border-t border-green-600/30 pt-8">
-          <div className="flex flex-col sm:flex-row justify-center items-center space-y-4 sm:space-y-0">
-            <div className="text-center sm:text-left">
-              <p className="text-white text-sm">
-                 © {new Date().getFullYear()}, {" "}
-                <span className="text-yellow-400 font-serif font-bold">
-                   -ZANZIBAR ENVIROMENT MANAGEMENT AUTHORITY (ZEMA)
-        </span>
-              </p>
-            </div>
-            {/* <div className="flex space-x-6">
-              {[
-                { text: "Terms", href: "/terms" },
-                { text: "Policy", href: "/privacy" },
-              ].map((link, index) => (
-                <a
-                  key={index}
-                  href={link.href}
-                  className="text-white hover:text-white transition-colors duration-300 text-sm font-medium"
-                >
-                  {link.text}
-                </a>
-              ))}
-            </div> */}
+          <div className="border-t border-green-600/30 pt-8">
+              <div className="flex flex-col sm:flex-row justify-between items-center space-y-4 sm:space-y-0">
+
+                  {/* Left - Copyright */}
+                  <div className="text-center sm:text-left">
+                      <p className="text-white text-sm">
+                          © {new Date().getFullYear()} ZEMA. All rights reserved.
+                      </p>
+                  </div>
+
+                  {/* Right - Developed by */}
+                  <div className="text-center sm:text-right">
+                      <p className="text-blue-100 text-sm">
+                          Developed  & Maintained by <span className="text-white font-medium">eGAZ</span>
+                      </p>
+                  </div>
+
+              </div>
           </div>
-        </div>
       </div>
-
-      {/* Floating Action Buttons */}
-      {/* <div className="fixed bottom-6 right-6 z-50 flex flex-col items-end space-y-3"> */}
-        {/* Extra buttons appear when open */}
-        {/* <div
-          className={`transition-all duration-500 ease-in-out overflow-hidden ${isVisible
-            ? "opacity-100 max-h-96 tranblue-y-0"
-            : "opacity-0 max-h-0 -tranblue-y-2"
-            }`}
-        >
-          <div className="flex flex-col items-end space-y-3 mb-2">
-
-            <Button
-              size="icon"
-              onClick={() => {
-                setLang("sw");
-                changeLanguage("sw");
-              }}
-              className="rounded-2xl bg-blue-400 hover:bg-green-500 backdrop-blur-lg text-white shadow-lg border border-amber-500/30 transition-all hover:scale-105"
-            >
-              🇹🇿
-            </Button>
-            <Button
-              size="icon"
-              onClick={() => {
-                changeLanguage("en");
-                setLang("en");
-              }}
-              className="rounded-2xl bg-blue-400 hover:bg-green-600/80 backdrop-blur-lg text-white  shadow-lg border border-blue-500/30 transition-all hover:scale-105"
-            >
-              ENG
-            </Button>
-          </div>
-        </div>
-        <Button
-          size="icon"
-          onClick={() => setIsVisible(!isVisible)}
-          className="rounded-2xl bg-blue-400 hover:bg-green-600/80 text-white transition-all transform hover:scale-110 backdrop-blur-lg"
-        >
-          {isVisible ? (
-            <X className="w-5 h-5" />
-          ) : (
-            <Plus className="w-5 h-5" />
-          )}
-        </Button>
-
-        
-      </div> */}
 
       {/* Top wave decoration - more subtle */}
       <div className="absolute top-0 left-0 right-0 transform -tranblue-y-1">

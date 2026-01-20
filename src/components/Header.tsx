@@ -42,8 +42,8 @@ interface NavigationItem {
 
 const translations = {
   sw: {
-    title: "ZANZIBAR ENVIROMENT MANAGEMENT AUTHORITY",
-    subtitle: "(ZEMA)",
+    title: "Serikali Ya Mapinduzi Zanzibar",
+    subtitle: "Zanzibar Environmental Management Authority (ZEMA)",
     search: "Tafuta...",
     weather: "Hali ya Hewa",
     navigation: "Menyu",
@@ -64,8 +64,8 @@ const translations = {
     allServices: "Huduma Zote",
   },
   en: {
-    title: "ZANZIBAR ENVIROMENT MANAGEMENT AUTHORITY",
-    subtitle: "(ZEMA)",
+    title: "The Revolutionary Government of Zanzibar",
+    subtitle: "Zanzibar Environmental Management Authority (ZEMA)",
     search: "Search...",
     weather: "Weather",
     navigation: "Navigation",
@@ -151,34 +151,34 @@ const Header = () => {
   // };
 
   // Get badge color based on type
-  const getBadgeColor = (badgeType: string) => {
-    switch (badgeType) {
-      case translations[lang].featured:
-        return "bg-gradient-to-r from-blue-500 to-blue-500";
-      case translations[lang].new:
-        return "bg-gradient-to-r from-green-400 to-blue-500";
-      case translations[lang].trending:
-        return "bg-gradient-to-r from-blue-500 to-blue-600";
-      default:
-        return "bg-gradient-to-r from-blue-400 to-blue-500";
-    }
-  };
-
-  const getBadgeTextColor = (badgeType: string) => {
-    switch (badgeType) {
-      case translations[lang].featured:
-        return "bg-blue-100 text-blue-800 border border-blue-200";
-      case translations[lang].new:
-        return "bg-green-700 text-white rounded-lg";
-      case translations[lang].trending:
-        return "bg-blue-100 text-blue-800 border border-blue-200";
-      default:
-        return "bg-gray-100 text-gray-800";
-    }
-  };
+  // const getBadgeColor = (badgeType: string) => {
+  //   switch (badgeType) {
+  //     case translations[lang].featured:
+  //       return "bg-gradient-to-r from-blue-500 to-blue-500";
+  //     case translations[lang].new:
+  //       return "bg-gradient-to-r from-[#2b8a57]-400 to-blue-500";
+  //     case translations[lang].trending:
+  //       return "bg-gradient-to-r from-blue-500 to-blue-600";
+  //     default:
+  //       return "bg-gradient-to-r from-blue-400 to-blue-500";
+  //   }
+  // };
+  //
+  // const getBadgeTextColor = (badgeType: string) => {
+  //   switch (badgeType) {
+  //     case translations[lang].featured:
+  //       return "bg-blue-100 text-blue-800 border border-blue-200";
+  //     case translations[lang].new:
+  //       return "bg-green-700 text-white rounded-lg";
+  //     case translations[lang].trending:
+  //       return "bg-blue-100 text-blue-800 border border-blue-200";
+  //     default:
+  //       return "bg-gray-100 text-gray-800";
+  //   }
+  // };
 
   return (
-    <header className="bg-green-500 shadow-elegant">
+    <header className="bg-[#2b8a57] shadow-elegant">
       {/* Spacer for fixed header */}
       {isScrolled && <div className="h-16 sm:h-20"></div>}
 
@@ -202,10 +202,10 @@ const Header = () => {
         </div>
 
         <div className="flex flex-col items-center text-center notranslate mx-4 flex-1 max-w-4xl">
-          <h1 className="text-green-900 font-serif font-bold text-xl lg:text-xl xl:text-2xl leading-tight bg-gradient-to-r from-green-600 to-green-800 bg-clip-text text-transparent px-4 break-words whitespace-normal">
+          <h1 className="text-black font-serif font-bold text-xl lg:text-xl xl:text-2xl leading-tight bg-gradient-to-r from-green-600 to-green-800 bg-clip-text text-transparent px-4 break-words whitespace-normal">
             {translations[lang].title}
           </h1>
-          <p className="text-green-800 text-xl lg:text-2xl xl:text-2xl font-serif font-bold mt-2 px-4 break-words whitespace-normal">
+          <p className="text-[#2b8a57]-800 text-xl lg:text-2xl xl:text-2xl font-serif font-bold mt-2 px-4 break-words whitespace-normal">
             {translations[lang].subtitle}
           </p>
         </div>
@@ -222,15 +222,15 @@ const Header = () => {
       {/* Main Navigation */}
       <div
         className={`${isScrolled
-          ? "fixed top-0 left-0 right-0 z-50 shadow-2xl bg-gradient-to-r from-green-300/70 via-green-300/70 to-green-300/70 animate-slideDown bg-opacity-95 container"
-          : "relative shadow-lg bg-gradient-to-r from-green-600 via-green-600 to-green-600"
+          ? "fixed top-0 left-0 right-0 z-50 shadow-2xl bg-[#2b8a57] animate-slideDown bg-opacity-95 container"
+          : "relative shadow-lg bg-[#2b8a57]"
           } transition-all duration-100 border-b border-white/20`}
       >
         <div className="container mx-auto px-4 py-3">
           <div className="flex items-center justify-between">
             {/* Mobile Header */}
             <div className="lg:hidden flex items-center w-full">
-              <div className="text-white font-semibold text-lg flex-1 text-center bg-white/10 py-2 rounded-xl backdrop-blur-sm line-clamp-2 px-2">
+              <div className="text-black font-semibold text-lg flex-1 text-center bg-white/10 py-2 rounded-xl backdrop-blur-sm line-clamp-2 px-2">
                 {translations[lang].subtitle}
               </div>
               <div className="flex items-center space-x-2 ml-3">
@@ -299,11 +299,11 @@ const Header = () => {
 
                         {/* Magical Blue/bulue/blue Dropdown Menu */}
                         <div
-                          className={`absolute top-full left-1/2 transform -translate-x-1/2 mt-2 w-[720px] bg-white shadow-lg border border-green-200 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 z-50 transform-gpu group-hover:translate-y-0 translate-y-2 scale-98 group-hover:scale-100 overflow-hidden ${activeDropdown === item.name ? 'animate-in fade-in-0 zoom-in-95' : ''
+                          className={`absolute top-full left-1/2 transform -translate-x-1/2 mt-2 w-[720px] bg-white shadow-lg border border-[#2b8a57]-200 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 z-50 transform-gpu group-hover:translate-y-0 translate-y-2 scale-98 group-hover:scale-100 overflow-hidden ${activeDropdown === item.name ? 'animate-in fade-in-0 zoom-in-95' : ''
                             }`}
                         >
                           {/* Elegant Header */}
-                          <div className="bg-gradient-to-r from-green-500 via-green-500 to-green-500 bg-opacity-95 z-50 px-6 py-4 border-b border-green-300">
+                          <div className="bg-[#2b8a57] bg-opacity-95 z-50 px-6 py-4 border-b border-[#2b8a57]-300">
                             <div className="flex items-center justify-between">
                               <div className="flex items-center space-x-3">
                                 <div className="w-8 h-8 bg-white/20 rounded flex items-center justify-center">
@@ -337,18 +337,18 @@ const Header = () => {
 
                                     <div className="relative flex items-start space-x-3">
                                       <div className="flex-1 min-w-0">
-                                        <div className="flex items-start justify-between mb-2">
-                                          <span className="font-semibold text-gray-900 text-sm group-hover/item:text-blue-600 transition-colors leading-tight break-words">
-                                            {dropdownItem.name}
-                                          </span>
-                                          <span>{dropdownItem.badge && (
-                                              <div className="mb-2">
-                                            <span className={`text-xs px-2 py-1 font-medium ${getBadgeTextColor(dropdownItem.badge)}`}>
-                                              {dropdownItem.badge}
-                                            </span>
-                                              </div>
-                                          )}</span>
-                                        </div>
+                                        {/*<div className="flex items-start justify-between mb-2">*/}
+                                        {/*  <span className="font-semibold text-gray-900 text-sm group-hover/item:text-blue-600 transition-colors leading-tight break-words">*/}
+                                        {/*    {dropdownItem.name}*/}
+                                        {/*  </span>*/}
+                                        {/*  <span>{dropdownItem.badge && (*/}
+                                        {/*      <div className="mb-2">*/}
+                                        {/*    <span className={`text-xs px-2 py-1 font-medium ${getBadgeTextColor(dropdownItem.badge)}`}>*/}
+                                        {/*      {dropdownItem.badge}*/}
+                                        {/*    </span>*/}
+                                        {/*      </div>*/}
+                                        {/*  )}</span>*/}
+                                        {/*</div>*/}
 
                                         <p className="text-xs text-gray-600 leading-relaxed line-clamp-2">
                                           {dropdownItem.description}
@@ -476,11 +476,11 @@ const Header = () => {
                                         <span className="font-semibold text-gray-900 group-hover/item:text-blue-600 transition-colors leading-tight break-words">
                                           {dropdownItem.name}
                                         </span>
-                                        {dropdownItem.badge && (
-                                          <span className={`text-xs px-1.5 py-0.5 font-medium ${getBadgeTextColor(dropdownItem.badge)} flex-shrink-0 ml-2`}>
-                                            {dropdownItem.badge}
-                                          </span>
-                                        )}
+                                        {/*{dropdownItem.badge && (*/}
+                                        {/*  <span className={`text-xs px-1.5 py-0.5 font-medium ${getBadgeTextColor(dropdownItem.badge)} flex-shrink-0 ml-2`}>*/}
+                                        {/*    {dropdownItem.badge}*/}
+                                        {/*  </span>*/}
+                                        {/*)}*/}
                                       </div>
                                       <div className="text-xs text-gray-500 leading-relaxed line-clamp-2">
                                         {dropdownItem.description}
