@@ -195,13 +195,13 @@ const DirectorGeneral = () => {
                       </div>
                       <nav className="space-y-1">
                           <a href="/about" className="block text-gray-600 hover:text-black hover:bg-green-100 transition-all py-2 hover:px-3 rounded-lg">
-                              Who we are
+                              Introduction
                           </a>
                           <a href="/director-general" className="block text-gray-700 font-bold bg-green-100 py-2 px-3 rounded-lg border-l-4 border-green-600">
                               Message Of Director General
                           </a>
                           <a href="/what-we-do" className="block text-gray-600 hover:text-black hover:bg-green-100 transition-all py-2 hover:px-3 rounded-lg">
-                              What we do
+                              Mission and Vission
                           </a>
                       </nav>
                   </div>
