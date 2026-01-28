@@ -142,8 +142,7 @@ class MenuService {
         href: "/about", 
         hasDropdown: true,
         dropdownItems: [
-          { name: "Introduction", href: "/about", description: "Zanzibar Environmental Management Authority by its acronym ZEMA was established under the Zanzibar Environmental Management Act, 2015 aiming at coordinating, regulating, monitoring and supervising the environmental management concerns." },
-          { name: "Mission & Vission", href: "/what-we-do", description: "Tunaimarisha na Kuendeleza Utoaji wa Huduma za Serikali Mtandao kwa Taasisi za Umma" },
+          { name: "Introduction", href: "/about", description: "Get Glimpse on ZEMA History and Foundations" },
           { name: "Main Function", href: "/director-general", description: "Kwa niaba ya Menejimenti na Watumishi wa Mamlaka ya Serikali Mtandao (e-GA), ninayo furaha kuwakaribisha kwenye tovuti yetu mpya" },
           { name: "Strategic Plan", href: "/director-general", description: "Kwa niaba ya Menejimenti na Watumishi wa Mamlaka ya Serikali Mtandao (e-GA), ninayo furaha kuwakaribisha kwenye tovuti yetu mpya" },
           { name: "Organization Structure", href: "/director-general", description: "Kwa niaba ya Menejimenti na Watumishi wa Mamlaka ya Serikali Mtandao (e-GA), ninayo furaha kuwakaribisha kwenye tovuti yetu mpya" },

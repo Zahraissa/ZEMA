@@ -193,8 +193,6 @@ const Header = () => {
           backgroundPosition: "center",
         }}
       >
-          {/* Dark overlay */}
-          <div className="absolute inset-0 bg-black/30"></div>
         <div className="w-32 h-24 flex-shrink-0 transform hover:scale-105 transition-transform duration-300">
           <img
             src="/logo.png"
@@ -203,7 +201,7 @@ const Header = () => {
           />
         </div>
 
-        <div className="flex flex-col relative z-10 items-center text-center notranslate mx-4 flex-1 max-w-4xl">
+        <div className="flex flex-col items-center text-center notranslate mx-4 flex-1 max-w-4xl">
           <h1 className="text-white font-serif font-bold text-xl lg:text-xl xl:text-2xl leading-tight bg-gradient-to-r from-green-600 to-green-800 bg-clip-text text-transparent px-4 break-words whitespace-normal">
             {translations[lang].title}
           </h1>
