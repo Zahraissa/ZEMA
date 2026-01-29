@@ -143,8 +143,8 @@ class MenuService {
         hasDropdown: true,
         dropdownItems: [
           { name: "Introduction", href: "/about", description: "Get Glimpse on ZEMA History and Foundations" },
-          { name: "Main Function", href: "/director-general", description: "Kwa niaba ya Menejimenti na Watumishi wa Mamlaka ya Serikali Mtandao (e-GA), ninayo furaha kuwakaribisha kwenye tovuti yetu mpya" },
-          { name: "Strategic Plan", href: "/director-general", description: "Kwa niaba ya Menejimenti na Watumishi wa Mamlaka ya Serikali Mtandao (e-GA), ninayo furaha kuwakaribisha kwenye tovuti yetu mpya" },
+          { name: "Main Function", href: "/about", description: "Kwa niaba ya Menejimenti na Watumishi wa Mamlaka ya Serikali Mtandao (e-GA), ninayo furaha kuwakaribisha kwenye tovuti yetu mpya" },
+          { name: "Strategic Plan", href: "/about", description: "Kwa niaba ya Menejimenti na Watumishi wa Mamlaka ya Serikali Mtandao (e-GA), ninayo furaha kuwakaribisha kwenye tovuti yetu mpya" },
           { name: "Organization Structure", href: "/director-general", description: "Kwa niaba ya Menejimenti na Watumishi wa Mamlaka ya Serikali Mtandao (e-GA), ninayo furaha kuwakaribisha kwenye tovuti yetu mpya" },
           { name: "Board of Zema", href: "/director-general", description: "Kwa niaba ya Menejimenti na Watumishi wa Mamlaka ya Serikali Mtandao (e-GA), ninayo furaha kuwakaribisha kwenye tovuti yetu mpya" },
         ]

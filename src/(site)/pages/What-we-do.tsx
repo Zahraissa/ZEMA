@@ -155,53 +155,6 @@ const WhatWeDo = () => {
             </button>
           </div>
         </div>
-        {/* <section className="py-16 bg-white">
-  <div className="container mx-auto px-4">
-    <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 items-center">
-
-      
-      <div className="order-1 lg:order-2 flex justify-center">
-        <img
-          src="/img/MissionVission.jpg"
-          alt="Mission and Vision"
-          className="w-full max-w-md object-cover"
-          style={{
-            boxShadow:
-              "0px 0px 5px 2px blue, 0px 0px 15px 10px #FFD700",
-          }}
-        />
-      </div>
-
-      
-      <div className="order-2 lg:order-1">
-        <p className="text-black-700 leading-relaxed font-serif text-justify mb-6">
-          ZEMA supports the overall objective of the Zanzibar Environmental
-          Policy (ZEP). The ZEP intends to pave the way for the protection,
-          conservation, restoration and management of Zanzibar’s environmental
-          resources, such that their capacity to sustain development and
-          maintain the rich environmental endowment for the present and future
-          generations is not impaired.
-        </p>
-
-        <p className="text-black-800 text-justify mb-4">
-          <span className="font-serif text-green-700">Our Vision:</span>{" "}
-          Sound environment management for sustainable economic and social
-          benefit for present and future generations.
-        </p>
-
-        <p className="text-black-800 text-justify">
-          <span className="font-serif text-green-700">Our Mission:</span>{" "}
-          To promote sound and sustainable environmental management practices
-          through provision of policy guidance, institutional strengthening and
-          cooperation.
-        </p>
-      </div>
-
-    </div>
-  </div>
-</section> */}
-
-
         <Footer />
       </div>
     );
