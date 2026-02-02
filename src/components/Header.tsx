@@ -228,281 +228,157 @@ const Header = () => {
        >
         <div className="container mx-auto px-4 py-3">
           <div className="flex items-center justify-between">
-            {/*/!* Mobile Header *!/*/}
-            {/*<div className="lg:hidden flex items-center w-full">*/}
-            {/*  <div className="text-black font-semibold text-lg flex-1 text-center bg-white/10 py-2 rounded-xl backdrop-blur-sm line-clamp-2 px-2">*/}
-            {/*    {translations[lang].subtitle}*/}
-            {/*  </div>*/}
-            {/*  <div className="flex items-center space-x-2 ml-3">*/}
-            {/*    <Button*/}
-            {/*      variant="ghost"*/}
-            {/*      size="icon"*/}
-            {/*      className="text-white hover:bg-white/20 rounded-xl transition-all duration-200 hover:scale-110 backdrop-blur-sm"*/}
-            {/*      onClick={() => setIsSearchOpen(!isSearchOpen)}*/}
-            {/*    >*/}
-            {/*      <Search className="w-5 h-5" />*/}
-            {/*    </Button>*/}
-            {/*    <Button*/}
-            {/*      variant="ghost"*/}
-            {/*      size="icon"*/}
-            {/*      className="text-white hover:bg-white/20 rounded-lg transition-all duration-200 hover:scale-110 backdrop-blur-sm"*/}
-            {/*      onClick={() => setIsMenuOpen(!isMenuOpen)}*/}
-            {/*    >*/}
-            {/*      {isMenuOpen ? (*/}
-            {/*        <X className="w-6 h-6" />*/}
-            {/*      ) : (*/}
-            {/*        <Menu className="w-6 h-6" />*/}
-            {/*      )}*/}
-            {/*    </Button>*/}
-            {/*  </div>*/}
-            {/*</div>*/}
+{/* Mobile Header */}
+<div className="lg:hidden flex items-center w-full">
+  <div className="text-black font-semibold text-lg flex-1 text-center bg-white/10 py-2 rounded-xl backdrop-blur-sm line-clamp-2 px-2">
+    {translations[lang].subtitle}
+  </div>
+  <div className="flex items-center space-x-2 ml-3">
+    <Button
+      variant="ghost"
+      size="icon"
+      className="text-white hover:bg-white/20 rounded-xl transition-all duration-200 hover:scale-110 backdrop-blur-sm"
+      onClick={() => setIsSearchOpen(!isSearchOpen)}
+    >
+      <Search className="w-5 h-5" />
+    </Button>
+    <Button
+      variant="ghost"
+      size="icon"
+      className="text-white hover:bg-white/20 rounded-lg transition-all duration-200 hover:scale-110 backdrop-blur-sm"
+      onClick={() => setIsMenuOpen(!isMenuOpen)}
+    >
+      {isMenuOpen ? (
+        <X className="w-6 h-6" />
+      ) : (
+        <Menu className="w-6 h-6" />
+      )}
+    </Button>
+  </div>
+</div>
 
-            {/*/!* Desktop Navigation *!/*/}
-            {/*<nav className="hidden lg:flex items-center space-x-2 mx-auto">*/}
-            {/*  {loading ? (*/}
-            {/*    <div className="flex items-center space-x-6">*/}
-            {/*      {[1, 2, 3, 4, 5].map((i) => (*/}
-            {/*        <div key={i} className="animate-pulse bg-white/20 h-8 w-28 rounded-xl"></div>*/}
-            {/*      ))}*/}
-            {/*    </div>*/}
-            {/*  ) : error ? (*/}
-            {/*    <div className="text-white text-sm flex items-center space-x-3 bg-white/10 px-4 py-2 rounded-xl backdrop-blur-sm">*/}
-            {/*      <span>{translations[lang].menuFailed}</span>*/}
-            {/*      <Button*/}
-            {/*        variant="ghost"*/}
-            {/*        size="sm"*/}
-            {/*        onClick={refreshMenu}*/}
-            {/*        className="text-white hover:bg-white/20"*/}
-            {/*      >*/}
-            {/*        {translations[lang].retry}*/}
-            {/*      </Button>*/}
-            {/*    </div>*/}
-            {/*  ) : (*/}
-            {/*    filteredNavigationItems.map((item, index) => (*/}
-            {/*      <div*/}
-            {/*        key={index}*/}
-            {/*        className="relative group"*/}
-            {/*        onMouseEnter={() => setActiveDropdown(item.name)}*/}
-            {/*        onMouseLeave={() => setActiveDropdown(null)}*/}
-            {/*       >*/}
-            {/*        {item.hasDropdown ? (*/}
-            {/*          <div className="relative">*/}
-            {/*            <Button*/}
-            {/*              variant="ghost"*/}
-            {/*              className="text-white hover:bg-white/10 flex items-center space-x-2 px-5 py-3 rounded-sm transition-all duration-300 group-hover:scale-105 group-hover:shadow-lg backdrop-blur-sm border border-white/10 min-w-[120px] justify-center"*/}
-            {/*            >*/}
-            {/*              <span className="font-semibold text-sm tracking-wide text-center whitespace-nowrap">*/}
-            {/*                {item.name}*/}
-            {/*              </span>*/}
-            {/*              <ChevronDown className="w-4 h-4 transition-transform duration-300 group-hover:rotate-180 flex-shrink-0" />*/}
-            {/*            </Button>*/}
+{/* Desktop Navigation */}
+<nav className="hidden lg:flex items-center space-x-2 mx-auto">
+  {loading ? (
+    <div className="flex items-center space-x-6">
+      {[1, 2, 3, 4, 5].map((i) => (
+        <div
+          key={i}
+          className="animate-pulse bg-white/20 h-8 w-28 rounded-xl"
+        ></div>
+      ))}
+    </div>
+  ) : error ? (
+    <div className="text-white text-sm flex items-center space-x-3 bg-white/10 px-4 py-2 rounded-xl backdrop-blur-sm">
+      <span>{translations[lang].menuFailed}</span>
+      <Button
+        variant="ghost"
+        size="sm"
+        onClick={refreshMenu}
+        className="text-white hover:bg-white/20"
+      >
+        {translations[lang].retry}
+      </Button>
+    </div>
+  ) : (
+    filteredNavigationItems.map((item, index) => (
+      <div
+        key={index}
+        className="relative group"
+        onMouseEnter={() => setActiveDropdown(item.name)}
+        onMouseLeave={() => setActiveDropdown(null)}
+      >
+        {item.hasDropdown ? (
+          <div className="relative">
+            <Button
+              variant="ghost"
+              className="text-white hover:bg-white/10 flex items-center space-x-2 px-5 py-3 rounded-sm transition-all duration-300 group-hover:scale-105 group-hover:shadow-lg backdrop-blur-sm border border-white/10 min-w-[120px] justify-center"
+            >
+              <span className="font-semibold text-sm tracking-wide text-center whitespace-nowrap">
+                {item.name}
+              </span>
+              <ChevronDown className="w-4 h-4 transition-transform duration-300 group-hover:rotate-180 flex-shrink-0" />
+            </Button>
 
-            {/*            /!* Magical Blue/bulue/blue Dropdown Menu *!/*/}
-            {/*            <div*/}
-            {/*              className={`absolute top-full left-1/2 transform -translate-x-1/2 mt-2 w-[720px] bg-white shadow-lg border border-[#2b8a57]-200 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 z-50 transform-gpu group-hover:translate-y-0 translate-y-2 scale-98 group-hover:scale-100 overflow-hidden ${activeDropdown === item.name ? 'animate-in fade-in-0 zoom-in-95' : ''*/}
-            {/*                }`}*/}
-            {/*            >*/}
-            {/*              /!* Elegant Header *!/*/}
-            {/*              <div className="bg-[#2b8a57] bg-opacity-95 z-50 px-6 py-4 border-b border-[#2b8a57]-300">*/}
-            {/*                <div className="flex items-center justify-between">*/}
-            {/*                  <div className="flex items-center space-x-3">*/}
-            {/*                    <div className="w-8 h-8 bg-white/20 rounded flex items-center justify-center">*/}
-            {/*                      <Grid3X3 className="w-4 h-4 text-white" />*/}
-            {/*                    </div>*/}
-            {/*                    <div>*/}
-            {/*                      <h3 className="text-white font-bold text-lg tracking-tight">*/}
-            {/*                        {item.name}*/}
-            {/*                      </h3>*/}
-            {/*                      <p className="text-blue-100 text-sm font-medium">*/}
-            {/*                        current {item.name}*/}
-            {/*                      </p>*/}
-            {/*                    </div>*/}
-            {/*                  </div>*/}
-            {/*                </div>*/}
-            {/*              </div>*/}
-
-            {/*              /!* Services Grid *!/*/}
-            {/*              <div className="p-6 bg-gradient-to-br from-blue-50 via-white to-bulue-50">*/}
-            {/*                <div className="grid grid-cols-2 gap-3">*/}
-            {/*                  {getEnhancedDropdownItems(item.dropdownItems || [])*/}
-            {/*                    .slice(0, 8)*/}
-            {/*                    .map((dropdownItem, idx) => (*/}
-            {/*                      <Link*/}
-            {/*                        key={idx}*/}
-            {/*                        to={dropdownItem.href}*/}
-            {/*                        className="group/item block p-4 bg-white border border-blue-100 hover:border-bulue-300 hover:shadow-lg transition-all duration-200 hover:translate-y-[-2px] relative overflow-hidden"*/}
-            {/*                      >*/}
-            {/*                        /!* Background Gradient Effect *!/*/}
-            {/*                        <div className="absolute inset-0 bg-gradient-to-r from-transparent via-blue-50 to-transparent opacity-0 group-hover/item:opacity-100 transition-opacity duration-300"></div>*/}
-
-            {/*                        <div className="relative flex items-start space-x-3">*/}
-            {/*                          <div className="flex-1 min-w-0">*/}
-            {/*                            /!*<div className="flex items-start justify-between mb-2">*!/*/}
-            {/*                            /!*  <span className="font-semibold text-gray-900 text-sm group-hover/item:text-blue-600 transition-colors leading-tight break-words">*!/*/}
-            {/*                            /!*    {dropdownItem.name}*!/*/}
-            {/*                            /!*  </span>*!/*/}
-            {/*                            /!*  <span>{dropdownItem.badge && (*!/*/}
-            {/*                            /!*      <div className="mb-2">*!/*/}
-            {/*                            /!*    <span className={`text-xs px-2 py-1 font-medium ${getBadgeTextColor(dropdownItem.badge)}`}>*!/*/}
-            {/*                            /!*      {dropdownItem.badge}*!/*/}
-            {/*                            /!*    </span>*!/*/}
-            {/*                            /!*      </div>*!/*/}
-            {/*                            /!*  )}</span>*!/*/}
-            {/*                            /!*</div>*!/*/}
-
-            {/*                            <p className="text-xs text-gray-600 leading-relaxed line-clamp-2">*/}
-            {/*                              {dropdownItem.description}*/}
-            {/*                            </p>*/}
-            {/*                          </div>*/}
-            {/*                        </div>*/}
-            {/*                      </Link>*/}
-            {/*                    ))}*/}
-            {/*                </div>*/}
-
-            {/*                /!* View All Section *!/*/}
-            {/*                {item.dropdownItems && item.dropdownItems.length > 8 && (*/}
-            {/*                  <div className="mt-4 pt-4 border-t border-blue-100">*/}
-            {/*                    <Link*/}
-            {/*                      to={item.href}*/}
-            {/*                      className="group/view-all flex items-center justify-center space-x-2 text-blue-600 hover:text-blue-700 text-sm font-semibold transition-colors bg-white border border-blue-200 hover:border-bulue-300 py-3 hover:shadow-md"*/}
-            {/*                    >*/}
-            {/*                      <span>{translations[lang].viewAll} {item.name}</span>*/}
-            {/*                      <ChevronRight className="w-4 h-4 group-hover/view-all:translate-x-1 transition-transform" />*/}
-            {/*                    </Link>*/}
-            {/*                  </div>*/}
-            {/*                )}*/}
-            {/*              </div>*/}
-            {/*            </div>*/}
-            {/*          </div>*/}
-            {/*        ) : (*/}
-            {/*          <Link to={item.href}>*/}
-            {/*            <Button*/}
-            {/*              variant="ghost"*/}
-            {/*              className="text-white hover:bg-white/20 px-5 py-3 rounded-sm transition-all duration-300 hover:scale-105 font-semibold text-sm tracking-wide backdrop-blur-sm border border-white/10 hover:shadow-lg min-w-[120px] justify-center"*/}
-            {/*            >*/}
-            {/*              <span className="text-center whitespace-nowrap">*/}
-            {/*                {item.name}*/}
-            {/*              </span>*/}
-            {/*            </Button>*/}
-            {/*          </Link>*/}
-            {/*        )}*/}
-            {/*      </div>*/}
-            {/*    ))*/}
-            {/*  )}*/}
-            {/*</nav>*/}
-
-              {/* Mobile Header */}
-              <div className="lg:hidden flex items-center w-full">
-                  <div className="text-black font-semibold text-lg flex-1 text-center bg-white/10 py-2 rounded-xl backdrop-blur-sm line-clamp-2 px-2">
-                      {translations[lang].subtitle}
+            <div
+              className={`absolute top-full left-1/2 -translate-x-1/2 mt-2 w-[720px] bg-white shadow-lg border border-[#2b8a57]-200 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 z-50 translate-y-2 scale-98 group-hover:translate-y-0 group-hover:scale-100 overflow-hidden ${
+                activeDropdown === item.name
+                  ? "animate-in fade-in-0 zoom-in-95"
+                  : ""
+              }`}
+            >
+              <div className="bg-[#2b8a57] bg-opacity-95 px-6 py-4 border-b border-[#2b8a57]-300">
+                <div className="flex items-center space-x-3">
+                  <div className="w-8 h-8 bg-white/20 rounded flex items-center justify-center">
+                    <Grid3X3 className="w-4 h-4 text-white" />
                   </div>
-                  <div className="flex items-center space-x-2 ml-3">
-                      <Button
-                          variant="ghost"
-                          size="icon"
-                          className="text-white hover:bg-white/20 rounded-xl transition-all duration-200 hover:scale-110 backdrop-blur-sm"
-                          onClick={() => setIsSearchOpen(!isSearchOpen)}
-                      >
-                          <Search className="w-5 h-5" />
-                      </Button>
-                      <Button
-                          variant="ghost"
-                          size="icon"
-                          className="text-white hover:bg-white/20 rounded-lg transition-all duration-200 hover:scale-110 backdrop-blur-sm"
-                          onClick={() => setIsMenuOpen(!isMenuOpen)}
-                      >
-                          {isMenuOpen ? (
-                              <X className="w-6 h-6" />
-                          ) : (
-                              <Menu className="w-6 h-6" />
-                          )}
-                      </Button>
+                  <div>
+                    <h3 className="text-white font-bold text-lg">
+                      {item.name}
+                    </h3>
+                    <p className="text-blue-100 text-sm">
+                      current {item.name}
+                    </p>
                   </div>
+                </div>
               </div>
 
-              {/* Desktop Navigation */}
-              <nav className="hidden lg:flex items-center space-x-2 mx-auto">
-                  {loading ? (
-                      <div className="flex items-center space-x-6">
-                          {[1, 2, 3, 4, 5].map((i) => (
-                              <div key={i} className="animate-pulse bg-white/20 h-8 w-28 rounded-xl"></div>
-                          ))}
-                      </div>
-                  ) : error ? (
-                      <div className="text-white text-sm flex items-center space-x-3 bg-white/10 px-4 py-2 rounded-xl backdrop-blur-sm">
-                          <span>{translations[lang].menuFailed}</span>
-                          <Button
-                              variant="ghost"
-                              size="sm"
-                              onClick={refreshMenu}
-                              className="text-white hover:bg-white/20"
-                          >
-                              {translations[lang].retry}
-                          </Button>
-                      </div>
-                  ) : (
-                      filteredNavigationItems.map((item, index) => (
-                          <div className="relative group">
-                              {item.hasDropdown ? (
-                                  <>
-                                      {/* Main Button */}
-                                      <Button
-                                          variant="ghost"
-                                          className="text-white px-5 py-3 rounded-xl transition-all duration-300 hover:border hover:bg-transparent hover:border-white/20 hover:shadow-lg flex items-center space-x-2 justify-center"
-                                      >
-                                          <span className="font-semibold text-sm tracking-wide">{item.name}</span>
+              <div className="p-6 bg-gradient-to-br from-blue-50 via-white to-bulue-50">
+                <div className="grid grid-cols-2 gap-3">
+                  {getEnhancedDropdownItems(item.dropdownItems || [])
+                    .slice(0, 8)
+                    .map((dropdownItem, idx) => (
+                      <Link
+                        key={idx}
+                        to={dropdownItem.href}
+                        className="group/item block p-4 bg-white border border-blue-100 hover:border-bulue-300 hover:shadow-lg transition-all duration-200 hover:-translate-y-1 relative overflow-hidden"
+                      >
+                        <div className="absolute inset-0 bg-gradient-to-r from-transparent via-blue-50 to-transparent opacity-0 group-hover/item:opacity-100 transition-opacity duration-300">
+                         
+                        </div>
 
-                                          {/* Custom Arrow */}
-                                          <svg
-                                              className="w-4 h-4 transition-transform duration-300 group-hover:rotate-180"
-                                              xmlns="http://www.w3.org/2000/svg"
-                                              fill="none"
-                                              viewBox="0 0 24 24"
-                                              stroke="currentColor"
-                                          >
-                                              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
-                                          </svg>
-                                      </Button>
+                        <div className="relative">
+                           {dropdownItem.name}
+                          <p className="text-xs text-gray-600 line-clamp-2">
+                            {dropdownItem.description}
+                          </p>
+                        </div>
+                      </Link>
+                    ))}
+                </div>
 
-                                      {/* Dropdown Panel */}
-                                      <div
-                                          className={`absolute left-1/2 transform -translate-x-1/2 mt-2 w-72 bg-white rounded-2xl shadow-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible scale-90 group-hover:scale-100 transition-all duration-300 z-50`}
-                                      >
-                                          {/*/!* Optional Header *!/*/}
-                                          {/*<div className="px-6 py-4 border-b border-white/10">*/}
-                                          {/*    <h3 className="text-gray-900 font-semibold text-lg">{item.name}</h3>*/}
-                                          {/*    <p className="text-gray-500 text-sm">Current {item.name}</p>*/}
-                                          {/*</div>*/}
-
-                                          {/* Dropdown Items */}
-                                          <div className="grid gap-2 p-4">
-                                              {item.dropdownItems?.map((dropdownItem, idx) => (
-                                                  <Link
-                                                      key={idx}
-                                                      to={dropdownItem.href}
-                                                      className="block px-4 py-2 rounded-xl hover:bg-green-50 transition-all text-gray-700"
-                                                  >
-                                                      <p className="text-sm font-medium">{dropdownItem.name}</p>
-                                                      <p className="text-xs text-gray-500">{dropdownItem.description}</p>
-                                                  </Link>
-                                              ))}
-                                          </div>
-                                      </div>
-                                  </>
-                              ) : (
-                                  <Link to={item.href}>
-                                      <Button
-                                          variant="ghost"
-                                          className="text-white px-5 py-3 rounded-xl transition-all hover:bg-transparent duration-300 hover:border hover:border-white/20 hover:shadow-lg font-semibold text-sm tracking-wide"
-                                      >
-                                          {item.name}
-                                      </Button>
-                                  </Link>
-                              )}
-                          </div>
-                      ))
+                {item.dropdownItems &&
+                  item.dropdownItems.length > 8 && (
+                    <div className="mt-4 pt-4 border-t border-blue-100">
+                      <Link
+                        to={item.href}
+                        className="flex items-center justify-center space-x-2 text-blue-600 hover:text-blue-700 text-sm font-semibold bg-white border border-blue-200 hover:border-bulue-300 py-3 hover:shadow-md"
+                      >
+                        <span>
+                          {translations[lang].viewAll} {item.name}
+                        </span>
+                        <ChevronRight className="w-4 h-4 transition-transform group-hover:translate-x-1" />
+                      </Link>
+                    </div>
                   )}
-              </nav>
+              </div>
+            </div>
+          </div>
+        ) : (
+          <Link to={item.href}>
+            <Button
+              variant="ghost"
+              className="text-white hover:bg-white/20 px-5 py-3 rounded-sm transition-all duration-300 hover:scale-105 font-semibold text-sm backdrop-blur-sm border border-white/10 hover:shadow-lg min-w-[120px] justify-center"
+            >
+              {item.name}
+            </Button>
+          </Link>
+        )}
+      </div>
+    ))
+  )}
+</nav>
+
           </div>
         </div>
       </div>

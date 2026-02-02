@@ -156,12 +156,7 @@ class MenuService {
         dropdownItems: [
           { name: "Enviroment Certificate", href: "/introduction", description: "Mamlaka kwa kushirikiana na Taasisi mbalimbali za Umma, imesanifu, kujenga na kusimamia mifumo na miundombinu mbalimbali ya TEHAMA" },
           { name: "Enviroment Impact Assesment (EIA)", href: "/accountability-LA", description: "Mamlaka imesanifu na kutengeneza Tovuti mbalimbali za taasisi za umma kwa lengo la kuwezesha utoaji na upatikanaji wa taarifa" },
-          // { name: "Enviromental Audit (EA)", href: "/accountability-LA", description: "Mamlaka imesanifu na kutengeneza Tovuti mbalimbali za taasisi za umma kwa lengo la kuwezesha utoaji na upatikanaji wa taarifa" },
-          // { name: "Enviromental Report (ER)", href: "/accountability-LA", description: "Mamlaka imesanifu na kutengeneza Tovuti mbalimbali za taasisi za umma kwa lengo la kuwezesha utoaji na upatikanaji wa taarifa" },
-          // { name: "Pre Enviromental Audit", href: "/accountability-LA", description: "Mamlaka imesanifu na kutengeneza Tovuti mbalimbali za taasisi za umma kwa lengo la kuwezesha utoaji na upatikanaji wa taarifa" },
-          // { name: "Enviroment Direct Clearance ", href: "/accountability-LA", description: "Mamlaka imesanifu na kutengeneza Tovuti mbalimbali za taasisi za umma kwa lengo la kuwezesha utoaji na upatikanaji wa taarifa" },
           { name: "List of Experts/Firm", href: "/accountability-LA", description: "Mamlaka imesanifu na kutengeneza Tovuti mbalimbali za taasisi za umma kwa lengo la kuwezesha utoaji na upatikanaji wa taarifa" },
-          // { name: "Approved Project", href: "/accountability-LA", description: "Mamlaka imesanifu na kutengeneza Tovuti mbalimbali za taasisi za umma kwa lengo la kuwezesha utoaji na upatikanaji wa taarifa" },
         ]
       },
       // { 
